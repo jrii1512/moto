@@ -33,10 +33,13 @@ const huoltoKantaan = async (
         kustannukset
     );
 
+
+    console.log("service, tyyppi:", tyyppi);
     if (tyyppi.includes("Ford")){
         console.log("Ford appears so adding Ford .. and cost to costTable");
-        await client.queryArray('INSERT INTO costs (item, part, cost) VALUES ($1, $2, $3)', tyyppi, huomiot, kustannukset)
+        await client.queryArray('INSERT INTO costs (item, cost, part) VALUES ($1, $2, $3)', tyyppi, kustannukset, huomiot)
     }
+
 
 
     await client.end();
@@ -48,7 +51,7 @@ const huolot = async () => {
     console.log('Huoltojen haku');
     await client.connect();
     const res = await client.queryArray(
-        'SELECT * from motoService ORDER BY maintdate ASC'
+        'SELECT * FROM motoService ORDER BY maintdate ASC'
     );
     await client.end();
     console.log('Huolot -> ' + res.rows);

@@ -176,3 +176,125 @@ Mon Feb 07 2022 14:09:03 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresEr
 
 Mon Feb 07 2022 14:09:36 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, Pelti, 2022-02-07, 200
 
+Mon Feb 07 2022 17:45:00 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford, Pikahuolto, 0, Tuusula, , 2022-02-07, 222
+
+Mon Feb 07 2022 17:47:45 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford, Pikahuolto, 0, Tuusula, , 2022-02-07, 2222
+
+Mon Feb 07 2022 18:03:32 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, , 2022-02-07, 20000
+
+Mon Feb 07 2022 18:05:35 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford, Pikahuolto, 0, Tuusula, , 2022-02-07, 500
+
+Mon Feb 07 2022 18:10:25 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 0
+
+Mon Feb 07 2022 18:10:25 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 0
+
+Mon Feb 07 2022 18:10:26 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: improper qualified name (too many dotted names): new.motoservice.moto.includes
+
+Mon Feb 07 2022 18:13:27 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 0
+
+Mon Feb 07 2022 18:13:27 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 0
+
+Mon Feb 07 2022 18:13:28 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 18:20:52 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 670
+
+Mon Feb 07 2022 18:20:52 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 670
+
+Mon Feb 07 2022 18:20:53 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 18:22:53 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 888
+
+Mon Feb 07 2022 18:22:53 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 888
+
+Mon Feb 07 2022 18:22:54 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 18:31:35 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 18:31:35 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 18:31:36 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:28:04 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 19:28:04 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 19:28:05 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:28:04 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 19:28:05 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:28:35 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 19:28:04 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 19:28:05 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:28:35 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 10
+
+Mon Feb 07 2022 19:28:35 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:32:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:32:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:32:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:32:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:32:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:35:16 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:32:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:32:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:35:16 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:35:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:32:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:32:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:35:16 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:35:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:35:27 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 30
+
+Mon Feb 07 2022 19:32:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:32:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:35:16 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 20
+
+Mon Feb 07 2022 19:35:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:35:27 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 30
+
+Mon Feb 07 2022 19:35:27 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:36:07 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 80
+
+Mon Feb 07 2022 19:36:07 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 80
+
+Mon Feb 07 2022 19:36:07 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: missing FROM-clause entry for table "motoservice"
+
+Mon Feb 07 2022 19:43:04 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 3330
+
+Mon Feb 07 2022 19:43:04 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 3330
+
+Mon Feb 07 2022 19:44:31 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford, Pikahuolto, 0, Tuusula, pelti, 2022-02-07, 450
+
+Mon Feb 07 2022 19:43:04 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 3330
+
+Mon Feb 07 2022 19:44:31 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford, Pikahuolto, 0, Tuusula, pelti, 2022-02-07, 450
+
+Mon Feb 07 2022 19:44:31 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type integer: "pelti"
+
+Mon Feb 07 2022 19:46:40 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX 250F (2008), Pikahuolto, 0, Tuusula, test, 2022-02-07, 80
+
+Mon Feb 07 2022 19:51:17 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-07, 880
+
