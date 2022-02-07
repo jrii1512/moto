@@ -24,20 +24,23 @@ const lisaaHuolto = async ({ request, response }) => {
         console.log("Huolon lisäys");
         const body = request.body();
         const formData = await body.value;
+        console.log("formi ", formData);
         const tyyppi = formData.get("mototyyppi");
         const huolto = formData.get("huolto");
         const hetki = formData.get("hetki");
         const sijainti = formData.get("sijainti");
         const huomiot = formData.get("huomiot");
+        const kustannukset = formData.get("kustannukset");
         const huoltopvm = formData.get("hPVM");
 
-        let lisaysStr = new Date() + ": Huolto lisätty seuraavilla parametreillä: " + tyyppi + ", " + huolto + ", " + hetki + ", " + sijainti + ", " + huomiot + ", " + huoltopvm;
+        let lisaysStr = new Date() + ": Huolto lisätty seuraavilla parametreillä: " + tyyppi + ", " + huolto + ", " + hetki + ", " + sijainti + ", " + huomiot + ", " + huoltopvm + ", " + kustannukset;
         log.push(lisaysStr);
         loggaus(log);
 
         if (tyyppi != "" && huolto != "" && hetki != "" &&
             sijainti != "" && huomiot != "" && huoltopvm != "") {
-            await itemServices.huoltoKantaan(tyyppi, huolto, hetki, sijainti, huomiot, huoltopvm);
+            console.log("huomiot controller, ", huomiot);
+            await itemServices.huoltoKantaan(tyyppi, huolto, hetki, sijainti, huomiot, huoltopvm, kustannukset);
         }
         response.redirect('/huolot');
     }
@@ -49,6 +52,14 @@ const lisaaHuolto = async ({ request, response }) => {
 
     }
 };
+
+const haeKulut = async ({response}) =>{
+    const res = await itemServices.haeKustannukset()
+    console.log("haeKustannukset:", res);
+    response.body = await renderFile("../views/kulut.eta", {
+        kustannukset: res,
+    });
+}
 
 const haeHuolot = async ({ response }) => {
     response.body = await renderFile("../views/huolot.eta", {
@@ -92,7 +103,7 @@ const loggaus = async (log) => {
         });
 }
 
-export { showMain, haeHuolot, lisaaHuolto, showLogFile, loggaus };
+export { showMain, haeHuolot, lisaaHuolto, showLogFile, loggaus, haeKulut };
 
 
 

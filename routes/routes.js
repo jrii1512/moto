@@ -5,6 +5,8 @@ const router = new Router();
 
 router.get('/', item.showMain);
 router.get('/huolot', item.haeHuolot);
+router.get('/haeKulut', item.haeKulut);
 router.post('/huolot', item.lisaaHuolto);
+
 
 export default router.routes();
