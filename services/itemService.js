@@ -1,7 +1,7 @@
 import { client } from '../database/db.js';
 
 //const databaseUrl = Deno.env.get("DATABASE_URL");
-
+debugger;
 const huoltoKantaan = async (
     tyyppi,
     huolto,
@@ -33,14 +33,16 @@ const huoltoKantaan = async (
         kustannukset
     );
 
-
-    console.log("service, tyyppi:", tyyppi);
-    if (tyyppi.includes("Ford")){
-        console.log("Ford appears so adding Ford .. and cost to costTable");
-        await client.queryArray('INSERT INTO costs (item, cost, part) VALUES ($1, $2, $3)', tyyppi, kustannukset, huomiot)
+    console.log('service, tyyppi:', tyyppi);
+    if (tyyppi.includes('Ford')) {
+        console.log('Ford appears so adding Ford .. and cost to costTable');
+        await client.queryArray(
+            'INSERT INTO costs (item, cost, part) VALUES ($1, $2, $3)',
+            tyyppi,
+            kustannukset,
+            huomiot
+        );
     }
-
-
 
     await client.end();
     console.log('insert executed');
@@ -54,22 +56,17 @@ const huolot = async () => {
         'SELECT * FROM motoService ORDER BY maintdate ASC'
     );
     await client.end();
-    console.log('Huolot -> ' + res.rows);
+    //console.log('Huolot -> ' + res.rows);
     return res.rows;
 };
 
 const haeKustannukset = async () => {
     console.log('Kustannusten haku');
     await client.connect();
-    const res = await client.queryArray(
-        'SELECT * from costs'
-    );
+    const res = await client.queryArray('SELECT * from costs');
     await client.end();
     console.log('Kustannukset: ' + res.rows);
     return res.rows;
 };
-
-
-
 
 export { huoltoKantaan, huolot, haeKustannukset };

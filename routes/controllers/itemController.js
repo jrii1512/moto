@@ -16,6 +16,8 @@ var temp = format(new Date(), 'yyyy-MM-dd HH:mm:ss');
 var tDate = temp.replace(' ', '_').replace(':', '');
 console.log('Dataa tiedostoon logs/appi_logs_' + tDate + '.log');
 
+debugger;
+
 var log = [];
 
 const showMain = async ({ response }) => {

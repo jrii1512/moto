@@ -298,3 +298,23 @@ Mon Feb 07 2022 19:46:40 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty 
 
 Mon Feb 07 2022 19:51:17 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-07, 880
 
+Wed Feb 09 2022 20:11:32 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, test, 0, Tuusula, test, 2022-02-09, 3000
+
+Wed Feb 09 2022 20:11:32 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, test, 0, Tuusula, test, 2022-02-09, 3000
+
+Wed Feb 09 2022 20:19:02 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX-250F, Pikahuolto, 0, Tuusula, Jäähdyttimet (oikea ja vasen) hankittu 24mx(ei asennettu, hinta 99 eli 100). Aikaisemmin hommattu kaksi ilmanputsaria + seisontatuki (näiden hinta arviolta oli 50)., 2022-01-28, 150
+
+Wed Feb 09 2022 20:11:32 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, test, 0, Tuusula, test, 2022-02-09, 3000
+
+Wed Feb 09 2022 20:19:02 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX-250F, Pikahuolto, 0, Tuusula, Jäähdyttimet (oikea ja vasen) hankittu 24mx(ei asennettu, hinta 99 eli 100). Aikaisemmin hommattu kaksi ilmanputsaria + seisontatuki (näiden hinta arviolta oli 50)., 2022-01-28, 150
+
+Wed Feb 09 2022 20:19:02 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: value too long for type character varying(160)
+
+Wed Feb 09 2022 20:11:32 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, test, 0, Tuusula, test, 2022-02-09, 3000
+
+Wed Feb 09 2022 20:19:02 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX-250F, Pikahuolto, 0, Tuusula, Jäähdyttimet (oikea ja vasen) hankittu 24mx(ei asennettu, hinta 99 eli 100). Aikaisemmin hommattu kaksi ilmanputsaria + seisontatuki (näiden hinta arviolta oli 50)., 2022-01-28, 150
+
+Wed Feb 09 2022 20:19:02 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: value too long for type character varying(160)
+
+Wed Feb 09 2022 20:22:32 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX-250F, Pikahuolto, 0, Tuusula, Jäähdyttimet (oikea ja vasen) hankittu 24mx(ei asennettu, hinta 99 eli 100). Aikaisemmin hommattu kaksi ilmanputsaria + seisontatuki (näiden hinta arviolta oli 50)., 2022-01-28, 150
+
