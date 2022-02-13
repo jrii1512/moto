@@ -43,14 +43,14 @@
 <p>
 
 <form method = "get" action = "/huolot">
-  <input type = "submit" value = "Näytä huolot (kaikki)" id = "naytaHuolot">
+  <input type = "submit" value = "Huolot" id = "naytaHuolot">
 </form>
 <p>
 <form method = "get" action = "/haeKulut">
-  <input type = "submit" value = "Näytä hankinnat" id = "kulut">
+  <input type = "submit" value = "Hankinnat" id = "kulut">
 </form>
 <form method = "get" action = "/haeYhteenveto">
-  <input type = "submit" value = "Hankintojen yhteenveto" id = "yhteenveto">
+  <input type = "submit" value = "Kulut / laite" id = "yhteenveto">
 </form>
 
 

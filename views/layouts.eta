@@ -57,6 +57,7 @@ input{
         height:60px;
         font-size:30px;
         font-weight: bold;
+        padding:2px;
     }
 
     input#back{
@@ -83,9 +84,8 @@ input{
     margin-bottom: 20px;
   }
 
-
     #laheta{
-    margin-top:20px;
+    margin-top:40px;
     border: solid, 1px;
     border-color:black;
     background-color: red;
@@ -96,6 +96,20 @@ input{
     font-size:36px;
     font-weight: bold;
   }
+
+#yhteenveto{
+    border: solid, 1px;
+    border-color:black;
+    background-color: green;
+    padding: 3px;
+}
+
+#kulut{
+    border: solid, 1px;
+    border-color:black;
+    background-color: green;
+    padding: 3px;
+}
 
     #naytaHuolot{
       border: solid, 1px;
@@ -114,6 +128,7 @@ input{
         width:200px;
         height:40px;
         font-size:30px;
+        margin-right:20px;
     }
 
 div#huollot{
