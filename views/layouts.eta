@@ -55,14 +55,14 @@ input{
     margin-top:3px;
         width:30%;
         height:60px;
-        font-size:20px;
+        font-size:30px;
         font-weight: bold;
     }
 
     input#back{
       width:20%;
       font-weight:bold;
-      font-size:20px;
+      font-size:30px;
       text-align: center;
   }
 
@@ -111,9 +111,9 @@ input{
 
 
     label{
-        width:600px;
-        height:80px;
-        font-size:80px;
+        width:200px;
+        height:40px;
+        font-size:30px;
     }
 
 div#huollot{
