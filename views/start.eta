@@ -29,7 +29,7 @@
           <p>
 
         <label for="osa"><b>Osa</b></label>
-          <input type = "text" name = "osa" id = "osa" value = "-">
+          <input type = "text" name = "osa" id = "osa" value = "-" placeholder = "osa">
         <p>
 
         <label for="kulu"><b>Kulu</b></label>

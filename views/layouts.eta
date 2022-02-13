@@ -46,28 +46,29 @@ input{
     margin-right:1px;
     margin-top: 100px;
     margin-bottom:100px;
-        width:100%;
-        height: 100%;
-        color: red;
+    width:90%;
+    height: 100%;
+    padding:5px;
     }
 
     input{
-        width:50%;
-        height:80px;
-        font-size:60px;
+    margin-top:3px;
+        width:30%;
+        height:60px;
+        font-size:20px;
+        font-weight: bold;
     }
 
     input#back{
-      width:40%;
+      width:20%;
       font-weight:bold;
-      font-size:26px;
+      font-size:20px;
       text-align: center;
   }
 
     input#hetki{
     width:20%;
   }
-
 
     input#mototyyppi, #huolto{
     width:90%;
@@ -84,17 +85,17 @@ input{
 
 
     #laheta{
-      margin-top:20px;
-      border: solid, 1px;
-      border-color:black;
-      background-color: red;
-      color: black;
-      padding: 3px;
-      text-align: center;
-      display: inline-block;
-      font-size:36px;
-      font-weight: bold;
-    }
+    margin-top:20px;
+    border: solid, 1px;
+    border-color:black;
+    background-color: red;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:36px;
+    font-weight: bold;
+  }
 
     #naytaHuolot{
       border: solid, 1px;
@@ -122,8 +123,8 @@ div#huollot{
     margin-bottom:100px;
     width:100%;
     height: 100%;
+  }
 }
-
 </style>
 </head>
 <body>
