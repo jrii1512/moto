@@ -12,7 +12,7 @@
       margin-right: 1%;
       background-color: lightblue;
       border: 5px solid;
-      padding: 5px;
+      padding: 10px;
       box-shadow: 5px 10px;
     }
 
@@ -30,9 +30,13 @@ textarea{
   padding: 5px;
   text-align: left;
 }
-
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+}​
 input{
-  padding: 5px;
+  padding: 10px;
   text-align: left;
 }
 

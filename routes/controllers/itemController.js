@@ -12,13 +12,12 @@ import { readLines } from 'https://deno.land/std/io/mod.ts';
 import * as path from 'https://deno.land/std/path/mod.ts';
 import { readline } from 'https://deno.land/x/readline@v1.1.0/mod.ts';
 
+var log = [];
 var temp = format(new Date(), 'yyyy-MM-dd HH:mm:ss');
 var tDate = temp.replace(' ', '_').replace(':', '');
 console.log('Dataa tiedostoon logs/appi_logs_' + tDate + '.log');
 
 debugger;
-
-var log = [];
 
 const showMain = async ({ response }) => {
     console.log('showMain called');
@@ -35,13 +34,14 @@ const lisaaHuolto = async ({ request, response }) => {
         const huolto = formData.get('huolto');
         const hetki = formData.get('hetki');
         const sijainti = formData.get('sijainti');
-        const huomiot = formData.get('huomiot'); //nothing...
-        const kustannukset = formData.get('kustannukset');
+        const huomiot = formData.get('huomiot');
+        const osa = formData.get('osa');
+        const kulu = formData.get('kulu');
         const huoltopvm = formData.get('hPVM');
 
         let lisaysStr =
             new Date() +
-            ': Huolto lisätty seuraavilla parametreillä: ' +
+            ': itemController, huolto lisätään seuraavilla parametreillä: ' +
             tyyppi +
             ', ' +
             huolto +
@@ -54,31 +54,24 @@ const lisaaHuolto = async ({ request, response }) => {
             ', ' +
             huoltopvm +
             ', ' +
-            kustannukset;
+            osa +
+            ', ' +
+            kulu;
         console.log(lisaysStr);
         log.push(lisaysStr);
         loggaus(log);
 
-        if (
-            tyyppi != '' &&
-            huolto != '' &&
-            hetki != '' &&
-            sijainti != '' &&
-            huomiot != '' &&
-            huoltopvm != ''
-        ) {
-
-            console.log('huomiot controller, ', huomiot);
-            await itemServices.huoltoKantaan(
-                tyyppi,
-                huolto,
-                hetki,
-                sijainti,
-                huomiot,
-                huoltopvm,
-                kustannukset
-            );
-        }
+        await itemServices.huoltoKantaan(
+            tyyppi,
+            huolto,
+            hetki,
+            sijainti,
+            huomiot,
+            huoltopvm,
+            osa,
+            kulu
+        );
+        console.log('huoltoKantaan kutsuttu');
         response.redirect('/huolot');
     } catch (err) {
         console.log('Controller error, ', err);
@@ -88,11 +81,15 @@ const lisaaHuolto = async ({ request, response }) => {
     }
 };
 
-const haeKulut = async ({ response }) => {
-    const res = await itemServices.haeKustannukset();
-    console.log('haeKustannukset:', res);
+const haeYhteenveto = async ({ response }) => {
+    response.body = await renderFile('../views/yhteenveto.eta', {
+        summat: await itemServices.haeSumma(),
+    });
+};
+
+const haeOstokset = async ({ response }) => {
     response.body = await renderFile('../views/kulut.eta', {
-        kustannukset: res,
+        kustannukset: await itemServices.haeHankinnat(),
     });
 };
 
@@ -136,4 +133,12 @@ const loggaus = async (log) => {
     });
 };
 
-export { showMain, haeHuolot, lisaaHuolto, showLogFile, loggaus, haeKulut };
+export {
+    showMain,
+    haeHuolot,
+    lisaaHuolto,
+    showLogFile,
+    loggaus,
+    haeOstokset,
+    haeYhteenveto,
+};

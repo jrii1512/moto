@@ -5,20 +5,19 @@
 </form>
 
 
-<h3>Hankinnat</h3>
+<h3>Yhteenveto per kulkuneuvo</h3>
+
 <table>
     <th>
         <tr>
-            <th>Väline</th><th>Osa</th><th>Kulu</th>
+            <th>Väline</th><th>Summa</th>
         </tr>
 
-<% it.kustannukset.forEach((h) =>{%>
-
+<% it.summat.forEach((s) =>{%>
     <tr>
-        <td><%= h[0] %></td> <td><%= h[1] %></td> <td><%= h[2] %></td>
+        <td><%= s[0] %></td> <td><%= s[1] %></td>
     </tr>
 <%}); %>
 
 </table>
 </div>
-

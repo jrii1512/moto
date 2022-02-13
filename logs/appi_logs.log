@@ -318,3 +318,157 @@ Wed Feb 09 2022 20:19:02 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresEr
 
 Wed Feb 09 2022 20:22:32 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Kawasaki KX-250F, Pikahuolto, 0, Tuusula, Jäähdyttimet (oikea ja vasen) hankittu 24mx(ei asennettu, hinta 99 eli 100). Aikaisemmin hommattu kaksi ilmanputsaria + seisontatuki (näiden hinta arviolta oli 50)., 2022-01-28, 150
 
+Wed Feb 09 2022 21:35:15 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, Kesärenkaat peltivanteilla hankittu Hyvinkäältä. Renkaiden mitat 215/75R16C., 2022-02-09, 250
+
+Wed Feb 09 2022 21:35:15 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, Kesärenkaat peltivanteilla hankittu Hyvinkäältä. Renkaiden mitat 215/75R16C., 2022-02-09, 250
+
+Wed Feb 09 2022 21:35:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: value too long for type character varying(60)
+
+Wed Feb 09 2022 21:35:15 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, Kesärenkaat peltivanteilla hankittu Hyvinkäältä. Renkaiden mitat 215/75R16C., 2022-02-09, 250
+
+Wed Feb 09 2022 21:35:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: value too long for type character varying(60)
+
+Wed Feb 09 2022 21:38:55 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, Kesärenkaat peltivanteilla hankittu Hyvinkäältä. Renkaiden mitat 215/75R16C., 2022-02-09, 250
+
+Sun Feb 13 2022 12:22:31 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, , 2022-02-13, Lokasuoja, null
+
+Sun Feb 13 2022 12:22:31 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, , 2022-02-13, Lokasuoja, null
+
+Sun Feb 13 2022 12:22:31 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:24:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, null
+
+Sun Feb 13 2022 12:24:13 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, null
+
+Sun Feb 13 2022 12:24:13 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:27:11 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 0
+
+Sun Feb 13 2022 12:27:11 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 0
+
+Sun Feb 13 2022 12:27:11 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:30:21 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 0
+
+Sun Feb 13 2022 12:30:21 GMT+0200 (Itä-Euroopan normaaliaika): Huolto lisätty seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 0
+
+Sun Feb 13 2022 12:30:21 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:35:18 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:35:18 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:35:18 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:54:00 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:54:00 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:54:00 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:55:05 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:55:05 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:55:06 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:55:57 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:55:57 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:55:58 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: latest_id is not defined
+
+Sun Feb 13 2022 12:56:49 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:56:49 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:56:50 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 12:58:42 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:58:42 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 12:58:42 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 13:03:20 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 13:03:20 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 13:03:21 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 13:05:18 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 13:05:18 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 13:05:19 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: bind message supplies 7 parameters, but prepared statement "" requires 8
+
+Sun Feb 13 2022 13:07:15 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2022-02-13, Lokasuoja, 2000
+
+Sun Feb 13 2022 16:17:00 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, Työmies on kaljansa ansainnut., 2022-02-13, Kaljaa ja lakua, 27
+
+Sun Feb 13 2022 16:17:00 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, Työmies on kaljansa ansainnut., 2022-02-13, Kaljaa ja lakua, 27
+
+Sun Feb 13 2022 16:17:00 GMT+0200 (Itä-Euroopan normaaliaika)_error: Error: Connection to the database has been terminated
+
+Sun Feb 13 2022 16:32:15 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, Työmies on kaljansa ansainnut., 2022-02-13, Kaljaa ja lakua, 27
+
+Sun Feb 13 2022 16:32:15 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, Työmies on kaljansa ansainnut., 2022-02-13, Kaljaa ja lakua, 27
+
+Sun Feb 13 2022 16:32:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type integer: "{"17"}"
+
+Sun Feb 13 2022 16:33:56 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, osa, 10
+
+Sun Feb 13 2022 16:33:56 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, osa, 10
+
+Sun Feb 13 2022 16:33:57 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type integer: "{"17"}"
+
+Sun Feb 13 2022 16:36:13 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, osa, 2
+
+Sun Feb 13 2022 16:36:13 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, osa, 2
+
+Sun Feb 13 2022 16:36:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type integer: "{"17"}"
+
+Sun Feb 13 2022 16:44:14 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:44:14 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:44:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:44:14 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:44:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:47:41 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:44:14 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:44:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:47:41 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:47:42 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:44:14 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:44:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:47:41 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:48:08 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokari, 2000
+
+Sun Feb 13 2022 16:47:42 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:44:14 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:44:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:47:41 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokasuoja, 20000
+
+Sun Feb 13 2022 16:47:42 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:48:08 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokari, 2000
+
+Sun Feb 13 2022 16:48:08 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: osa is not defined
+
+Sun Feb 13 2022 16:55:25 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokari, 2000
+
