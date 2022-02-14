@@ -23,6 +23,10 @@ table, td {
   background-color: black;
   padding:3px;
   color: white;
+  height:95%;
+  font-size:20px;
+  font-weight:bold;
+
 }
 th{
     background-color: black;
@@ -37,7 +41,7 @@ textarea{
 label {
   display: inline-block;
   width: 140px;
-  font-size:36px;
+  font-size:30px;
   font-weight:bold;
   text-align: left;
   color: white;
@@ -148,7 +152,7 @@ input#huoltoPVM{
 label{
     width:200px;
     height:40px;
-    font-size:36px;
+    font-size:30px;
     font-weight:bold;
     margin-right:20px;
     color: white;
