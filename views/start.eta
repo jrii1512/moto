@@ -12,7 +12,7 @@
         <p>
 
         <label for="huolto"><b>Huolto</b></label>
-          <input type = "text" name = "huolto" value = "Pikahuolto" required>
+          <input type = "text" name = "huolto" value = "Hankinta" required>
           <p>
 
         <label for="hetki"><b>KM / tunti</b></label>
@@ -36,7 +36,7 @@
         <p>
 
         <label for="huomiot"><b>Huomiot</b></label>
-          <textarea rows = "4" cols = "60" id = "huomiot" name = "huomiot"></textarea>
+          <textarea rows = "4" cols = "60" id = "huomiot" name = "huomiot" required></textarea>
           <!--<input type = "text" name = "huomiot" id = "huomiot" value ="-">-->
         <p><p>
 
