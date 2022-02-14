@@ -34,7 +34,7 @@
 
         <label for="kulu"><b>Kulu</b></label>
           <input type = "number" name = "kulu" id = "osa" value = "0">
-        <p>
+        <p><p>
 
 
         <input type = "submit" value = "Kantaan" id="laheta">
