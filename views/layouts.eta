@@ -60,6 +60,8 @@ form {
   width:90%;
   height: 100%;
   padding:5px;
+  border: 1px solid red;
+  border-color: red;
   border-radius: 10px
 }
 
