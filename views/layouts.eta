@@ -145,7 +145,7 @@ div#huollot{
     height: 100%;
   }
 
-@media only screen and (max-device-width: 1200px) and (max-device-height: 1600px) and (-webkit-min-device-pixel-ratio: 2.625)  {
+@media only screen and (max-device-width: 1100px) and (max-device-height: 1600px) and (-webkit-min-device-pixel-ratio: 2.625)  {
 
 .box{
     margin-top:20%;

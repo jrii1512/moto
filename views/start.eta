@@ -32,7 +32,7 @@
         <p>-->
 
         <label for="kulu"><b>Kulu</b></label>
-          <input type = "number" name = "kulu" id = "osa" value = "0">
+          <input type = "number" name = "kulu" id = "kulu" value = "0">
         <p>
 
         <label for="huomiot"><b>Huomiot</b></label>
