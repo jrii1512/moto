@@ -148,7 +148,7 @@ div#huollot{
 @media only screen and (min-device-width: 700px) and (max-device-height: 920px) and (-webkit-min-device-pixel-ratio: 2.625)  {
 
 .box{
-    margin-top:100px;
+    margin-top:20%;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
@@ -156,7 +156,7 @@ div#huollot{
     border-radius: 10px;
     padding: 10px;
     box-shadow: 5px 10px;
-    width: 95%;
+    width: 100%;
     align:center;
     }
 
@@ -166,7 +166,7 @@ div#huollot{
   margin-right:1px;
   margin-top: 100px;
   margin-bottom:100px;
-  width:70%;
+  width:95%;
   height: 100%;
   padding:5px;
   border: 1px solid red;
@@ -201,24 +201,24 @@ input{
   color: black;
   }
 
-input#back{
+#back{
   width:20%;
   font-weight:bold;
   font-size:30px;
   text-align: center;
 }
 
-input#hetki{
+#hetki{
   width:20%;
 }
 
-input#mototyyppi, #huolto{
+#mototyyppi, #huolto{
   width:90%;
 }
 
 
-input#huomiot{
-  width:95%;
+#huomiot, #osa{
+  width:60%;
 }
 
 input#huoltoPVM{

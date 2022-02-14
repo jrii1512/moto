@@ -19,7 +19,7 @@
           <input type = "number" name = "hetki" id = "hetki" value = "0">
         <p>
 
-        <label for="sijainti"><b>Huoltopaikka</b></label>
+        <label for="sijainti"><b>Paikka</b></label>
           <input type = "text" name = "sijainti" value = "Tuusula" id="s">
         <p>
 
