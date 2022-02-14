@@ -5,18 +5,30 @@
 <link rel="icon" href="data:;base64,=">
 <title>Moton Huolto Rekisteri</title>
 <style>
+
 .box{
-    margin-left: 1%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 1%;
+    margin:auto;
     background-color: black;
     border: 5px solid;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 5px 10px;
-
+    width: 60%;
+    align:center;
     }
+
+.formi{
+  margin-left:0;
+  margin-right:0;
+  margin-top: 100px;
+  margin-bottom:100px;
+  width:80%;
+  height: 90%;
+  padding:5px;
+  border: 1px solid red;
+  border-color: red;
+  border-radius: 10px;
+}
 
 table, td {
   border: 1px solid black;
@@ -25,50 +37,127 @@ table, td {
   background-color: black;
   color: white;
   height:98%;
-  font-size:26px;
-  font-weight:bold;
-
+  font-size:18px;
 }
 th, td{
     padding: 5px 5px 5px 5px
 }
 
-
-textarea{
-  padding: 5px;
-  text-align: left;
-  color: black;
-}
-label {
-  display: inline-block;
-  width: 140px;
-  font-size: 22px;
-  font-weight:bold;
-  text-align: left;
-  color: white;
-}
-​
 input{
-  padding: 10px;
-  text-align: left;
-  color: white;
+  margin-top:3px;
+  width:40%;
+  height:30px;
+  font-size:18px;
+  padding-left:10px;
+  padding-top:3px;
+  padding-bottom:3px;
+  color: black;
+  }
+
+input#back{
+  width:20%;
+  font-weight:bold;
+  font-size:18px;
+  text-align: center;
 }
+
+input#hetki{
+  width:20%;
+}
+
+input#mototyyppi, #huolto{
+  width:90%;
+}
+
+
+input#huomiot{
+  width:95%;
+}
+
+input#huoltoPVM{
+  margin-bottom: 20px;
+}
+
+#laheta{
+    margin-top:40px;
+    border: solid, 1px;
+    border-color:black;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:18px;
+    font-weight: bold;
+}
+
+#yhteenveto{
+    border: solid, 1px;
+    border-color:black;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:18px;
+    font-weight: bold;
+}
+
+#kulut{
+    border: solid, 1px;
+    border-color:black;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:18px;
+    font-weight: bold;
+}
+
+#naytaHuolot{
+    border: solid, 1px;
+    border-color:black;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:18px;
+    font-weight: bold;
+}
+
+label{
+    display:inline-block;
+    width:20%;
+    height:30px;
+    font-size:26px;
+    margin-right:20px;
+    color: white;
+    }
+
+div#huollot{
+    margin-left:1px;
+    margin-right:1px;
+    margin-top: 20px;
+    margin-bottom:100px;
+    width:100%;
+    height: 100%;
+  }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.625)  {
-form {
+
+.formi{
   margin-left:1px;
   margin-right:1px;
   margin-top: 100px;
   margin-bottom:100px;
-  width:90%;
+  width:40%;
   height: 100%;
   padding:5px;
-}
-
-.formi{
   border: 1px solid red;
   border-color: red;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 table, td {
@@ -85,7 +174,6 @@ table, td {
 th, td{
     padding: 5px 5px 5px 5px
 }
-
 
 input{
   margin-top:3px;
