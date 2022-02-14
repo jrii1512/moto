@@ -18,26 +18,32 @@
 
 table, td {
   border: 1px solid black;
+  border-color:white;
   text-align:left;
   background-color: black;
   padding:3px;
+  color: white;
 }
 th{
     background-color: black;
+    color: white;
 }
 
 textarea{
   padding: 5px;
   text-align: left;
+  color: black;
 }
 label {
   display: inline-block;
   width: 140px;
   text-align: left;
+  color: white;
 }​
 input{
   padding: 10px;
   text-align: left;
+  color: white;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.625)  {
@@ -60,7 +66,7 @@ input{
   padding-left:10px;
   padding-top:3px;
   padding-bottom:3px;
-  color: white;
+  color: black;
   }
 
 input#back{
@@ -138,10 +144,11 @@ input#huoltoPVM{
 }
 
 label{
-        width:200px;
-        height:40px;
-        font-size:30px;
-        margin-right:20px;
+    width:200px;
+    height:40px;
+    font-size:30px;
+    margin-right:20px;
+    color: black;
     }
 
 div#huollot{
