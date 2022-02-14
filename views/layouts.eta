@@ -12,8 +12,10 @@
     margin-right: 1%;
     background-color: black;
     border: 5px solid;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: 5px 10px;
+
     }
 
 table, td {
@@ -60,6 +62,9 @@ form {
   width:90%;
   height: 100%;
   padding:5px;
+}
+
+.formi{
   border: 1px solid red;
   border-color: red;
   border-radius: 10px
