@@ -145,7 +145,7 @@ div#huollot{
     height: 100%;
   }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 694px) and (-webkit-min-device-pixel-ratio: 2.625)  {
+@media only screen and (min-device-width: 520px) and (max-device-height: 894px) and (-webkit-min-device-pixel-ratio: 2.625)  {
 
 .formi{
   margin-left:1px;
