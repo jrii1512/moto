@@ -23,17 +23,21 @@
           <input type = "text" name = "sijainti" value = "Tuusula" id="s">
         <p>
 
-        <label for="huomiot"><b>Huomiot</b></label>
-          <textarea rows = "4" cols = "60" id = "huomiot" name = "huomiot"></textarea>
+        <label for="Osa"><b>Osa, koodi</b></label>
+          <textarea rows = "4" cols = "60" id = "osa" name = "osa"></textarea>
           <!--<input type = "text" name = "huomiot" id = "huomiot" value ="-">-->
           <p>
-
-        <label for="osa"><b>Osa</b></label>
+        <!--<label for="osa"><b>Osa</b></label>
           <input type = "text" name = "osa" id = "osa" value = "-" placeholder = "osa">
-        <p>
+        <p>-->
 
         <label for="kulu"><b>Kulu</b></label>
           <input type = "number" name = "kulu" id = "osa" value = "0">
+        <p>
+
+        <label for="huomiot"><b>Huomiot</b></label>
+          <textarea rows = "4" cols = "60" id = "huomiot" name = "huomiot"></textarea>
+          <!--<input type = "text" name = "huomiot" id = "huomiot" value ="-">-->
         <p><p>
 
 
