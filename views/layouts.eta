@@ -41,50 +41,52 @@ input{
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.625)  {
-    form {
-    margin-left:1px;
-    margin-right:1px;
-    margin-top: 100px;
-    margin-bottom:100px;
-    width:90%;
-    height: 100%;
-    padding:5px;
-    }
+form {
+  margin-left:1px;
+  margin-right:1px;
+  margin-top: 100px;
+  margin-bottom:100px;
+  width:90%;
+  height: 100%;
+  padding:5px;
+}
 
-    input{
-    margin-top:3px;
-        width:30%;
-        height:60px;
-        font-size:30px;
-        font-weight: bold;
-        padding:2px;
-    }
-
-    input#back{
-      width:20%;
-      font-weight:bold;
-      font-size:30px;
-      text-align: center;
+input{
+  margin-top:3px;
+  width:30%;
+  height:60px;
+  font-size:30px;
+  font-weight: bold;
+  padding-left:10px;
+  padding-top:3px;
+  padding-bottom:3px;
   }
 
-    input#hetki{
-    width:20%;
-  }
+input#back{
+  width:20%;
+  font-weight:bold;
+  font-size:30px;
+  text-align: center;
+}
 
-    input#mototyyppi, #huolto{
-    width:90%;
-  }
+input#hetki{
+  width:20%;
+}
+
+input#mototyyppi, #huolto{
+  width:90%;
+}
 
 
-    input#huomiot{
-    width:95%;
-  }
+input#huomiot{
+  width:95%;
+}
 
-    input#huoltoPVM{
-    margin-bottom: 20px;
-  }
+input#huoltoPVM{
+  margin-bottom: 20px;
+}
 
-    #laheta{
+#laheta{
     margin-top:40px;
     border: solid, 1px;
     border-color:black;
@@ -95,13 +97,18 @@ input{
     display: inline-block;
     font-size:36px;
     font-weight: bold;
-  }
+}
+
 
 #yhteenveto{
     border: solid, 1px;
     border-color:black;
     background-color: green;
     padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:36px;
+    font-weight: bold;
 }
 
 #kulut{
@@ -109,22 +116,25 @@ input{
     border-color:black;
     background-color: green;
     padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:36px;
+    font-weight: bold;
 }
 
-    #naytaHuolot{
-      border: solid, 1px;
-      border-color:black;
-      background-color: #4CAF50;
-      color: black;
-      padding: 3px;
-      text-align: center;
-      display: inline-block;
-      font-size:36px;
-      font-weight: bold;
-    }
+#naytaHuolot{
+    border: solid, 1px;
+    border-color:black;
+    background-color: #4CAF50;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:36px;
+    font-weight: bold;
+}
 
-
-    label{
+label{
         width:200px;
         height:40px;
         font-size:30px;
