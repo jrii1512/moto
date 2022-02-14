@@ -41,7 +41,8 @@ textarea{
 }
 label {
   display: inline-block;
-  font-size: 26px;
+  width: 140px;
+  font-size: 22px;
   font-weight:bold;
   text-align: left;
   color: white;
