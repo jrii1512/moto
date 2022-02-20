@@ -24,7 +24,7 @@ const kuvaKantaan = async (data) => {
         await client.queryArray('INSERT INTO kuvat (photo) VALUES($1)', data);
         await client.end();
     } catch (err) {
-        console.log('Server error kuva lahetys, ', err);
+        console.log('Server error, kuvan tallentamisessa tietokantaan, ', err);
         const errorNote = new Date() + '_error: ' + err;
         log.push(errorNote);
         l.loggaus(log);
@@ -33,8 +33,8 @@ const kuvaKantaan = async (data) => {
 
 const haePhotot = async () => {
     await client.connect();
-    const resp = await client.queryArray('SELECT * FROM kuvat');
-    console.log(resp);
+    const resp = await client.queryArray('SELECT photo FROM kuvat');
+    console.log("haePhotot response: ", resp.rows);
     return resp.rows;
 };
 
