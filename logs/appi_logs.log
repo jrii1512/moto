@@ -472,3 +472,83 @@ Sun Feb 13 2022 16:48:08 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceE
 
 Sun Feb 13 2022 16:55:25 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, , 2022-02-13, Lokari, 2000
 
+Sun Feb 20 2022 11:07:47 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'get')
+
+Sun Feb 20 2022 11:09:06 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'get')
+
+Sun Feb 20 2022 11:09:06 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'get')
+
+Sun Feb 20 2022 11:09:11 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'get')
+
+Sun Feb 20 2022 11:09:06 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'get')
+
+Sun Feb 20 2022 11:09:11 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'get')
+
+Sun Feb 20 2022 11:09:31 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: kuva is not defined
+
+Sun Feb 20 2022 11:10:38 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: loggaus is not defined
+
+Sun Feb 20 2022 13:13:32 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: l.loggaus.loggaus is not a function
+
+Sun Feb 20 2022 13:15:51 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type oid: "Omakuva.jpg"
+
+Sun Feb 20 2022 13:38:15 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: formData.get is not a function
+
+Sun Feb 20 2022 13:40:00 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: formData.get is not a function
+
+Sun Feb 20 2022 13:41:36 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: formData is not defined
+
+Sun Feb 20 2022 15:22:38 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: reques is not defined
+
+Sun Feb 20 2022 15:23:30 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Body already consumed as form data and can only be returned as form data.
+
+Sun Feb 20 2022 15:24:43 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: photo is not defined
+
+Sun Feb 20 2022 15:25:56 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot convert object to primitive value
+
+Sun Feb 20 2022 15:52:08 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot convert object to primitive value
+
+Sun Feb 20 2022 16:11:03 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot convert object to primitive value
+
+Sun Feb 20 2022 16:12:44 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 16:12:44 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 16:14:25 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 16:16:13 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 16:16:13 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 16:16:18 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 16:17:05 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 16:18:35 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 17:08:03 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "photo" does not exist
+
+Sun Feb 20 2022 17:09:51 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: bytea is not defined
+
+Sun Feb 20 2022 17:10:34 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: function bytea(unknown) does not exist
+
+Sun Feb 20 2022 17:16:18 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: photo is not defined
+
+Sun Feb 20 2022 17:43:29 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "data" does not exist
+
+Sun Feb 20 2022 17:44:38 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: there is no parameter $1
+
+Sun Feb 20 2022 17:45:25 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "data" does not exist
+
+Sun Feb 20 2022 17:52:41 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: column "data" does not exist
+
+Sun Feb 20 2022 17:53:46 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: bytea is not defined
+
+Sun Feb 20 2022 17:58:19 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: bytea is not defined
+
+Sun Feb 20 2022 17:59:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: there is no parameter $1
+
+Sun Feb 20 2022 17:59:14 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: there is no parameter $1
+
+Sun Feb 20 2022 18:00:54 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: there is no parameter $1
+

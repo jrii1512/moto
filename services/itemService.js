@@ -1,7 +1,10 @@
 import { client } from '../database/db.js';
+import * as l from '../logs/logger.js';
 
 //const databaseUrl = Deno.env.get("DATABASE_URL");
 debugger;
+
+var log = [];
 
 const tarkistaHuoltoId = async (response) => {
     console.log(tarkistaHuoltoId);
@@ -12,6 +15,27 @@ const tarkistaHuoltoId = async (response) => {
     await client.end();
     console.log('Viimeisin huolto_id: ', res.rows[0]);
     return res.rows[0];
+};
+
+const kuvaKantaan = async (data) => {
+    try {
+        console.log(data);
+        await client.connect();
+        await client.queryArray('INSERT INTO kuvat (photo) VALUES($1)', data);
+        await client.end();
+    } catch (err) {
+        console.log('Server error kuva lahetys, ', err);
+        const errorNote = new Date() + '_error: ' + err;
+        log.push(errorNote);
+        l.loggaus(log);
+    }
+};
+
+const haePhotot = async () => {
+    await client.connect();
+    const resp = await client.queryArray('SELECT * FROM kuvat');
+    console.log(resp);
+    return resp.rows;
 };
 
 const huoltoKantaan = async (
@@ -116,4 +140,12 @@ const haeHankinnat = async () => {
     return res.rows;
 };
 
-export { tarkistaHuoltoId, huoltoKantaan, huolot, haeHankinnat, haeSumma };
+export {
+    tarkistaHuoltoId,
+    huoltoKantaan,
+    huolot,
+    haeHankinnat,
+    haeSumma,
+    kuvaKantaan,
+    haePhotot,
+};

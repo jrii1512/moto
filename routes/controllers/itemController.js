@@ -1,22 +1,14 @@
 import { Context } from 'https://deno.land/x/oak@v9.0.1/mod.ts';
 import * as itemServices from '../../services/itemService.js';
 import { renderFile } from '../../deps.js';
-import {
-    ensureDir,
-    ensureFile,
-    ensureFileSync,
-} from 'https://deno.land/std/fs/mod.ts';
-import { format } from 'https://deno.land/std@0.91.0/datetime/mod.ts';
 import { getIP } from 'https://deno.land/x/get_ip/mod.ts';
 import { readLines } from 'https://deno.land/std/io/mod.ts';
 import * as path from 'https://deno.land/std/path/mod.ts';
 import { readline } from 'https://deno.land/x/readline@v1.1.0/mod.ts';
 
-var log = [];
-var temp = format(new Date(), 'yyyy-MM-dd HH:mm:ss');
-var tDate = temp.replace(' ', '_').replace(':', '');
-console.log('Dataa tiedostoon logs/appi_logs_' + tDate + '.log');
+import * as l from '../../logs/logger.js';
 
+var log = [];
 debugger;
 
 const showMain = async ({ response }) => {
@@ -59,7 +51,7 @@ const lisaaHuolto = async ({ request, response }) => {
             kulu;
         console.log(lisaysStr);
         log.push(lisaysStr);
-        loggaus(log);
+        l.loggaus(log);
 
         await itemServices.huoltoKantaan(
             tyyppi,
@@ -99,37 +91,31 @@ const haeHuolot = async ({ response }) => {
     });
 };
 
-const showLogFile = async ({ response }) => {
-    console.log('itemController, showLogFile');
-    const data = await Deno.readTextFile('logs/appi_logs.log');
-    console.log(data);
-    response.body = await renderFile('../views/logReader.eta', {
-        content: data,
-        newLine: '\n',
-    });
-};
+const lisaaKuva = async ({ request, response }) => {
+    try {
+        console.log('Kuvan lisäys');
+        const body = request.body({ type: 'form-data' });
+        const reader = body.value;
+        const data = await reader.read();
 
-//https://deno.land/x/readline@v1.1.0
-const showLogFileNotWorking = async ({ response }) => {
-    console.log('showLogFile');
-    const f = await Deno.open('logs/appi_logs.log');
-    for await (const line of readline(f)) {
-        response.body = await renderFile('../views/logReader.eta', {
-            content: `${new TextDecoder().decode(line)}`,
-        });
+        //log.push("");
+        //loggaus(log);
+
+        await itemServices.kuvaKantaan(data);
+        console.log('kuva kantaan kutsuttu');
+        //response.redirect('/kuvat');
+    } catch (err) {
+        console.log('Controller error kuva, ', err);
+        const errorNote = new Date() + '_error: ' + err;
+        log.push(errorNote);
+        l.loggaus(log);
     }
-    f.close();
 };
 
-const loggaus = async (log) => {
-    console.log('loggaus funktioata kutsuttu');
-    ensureDir('./logs').then(() => {
-        let location = './logs/appi_logs.log';
-
-        for (let i of log) {
-            console.log(i);
-            Deno.writeTextFile(location, i + '\n\n', { append: true });
-        }
+const haeKuvat = async ({ response }) => {
+    console.log('haeKuvat funkkari');
+    response.body = await renderFile('../views/kuvat.eta', {
+        kuvat: await itemServices.haePhotot(),
     });
 };
 
@@ -137,8 +123,8 @@ export {
     showMain,
     haeHuolot,
     lisaaHuolto,
-    showLogFile,
-    loggaus,
     haeOstokset,
     haeYhteenveto,
+    haeKuvat,
+    lisaaKuva,
 };

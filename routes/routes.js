@@ -9,5 +9,8 @@ router.get('/haeKulut', item.haeOstokset);
 router.get('/haeYhteenveto', item.haeYhteenveto);
 router.post('/huolot', item.lisaaHuolto);
 
+router.get('/haeKuvat', item.haeKuvat);
+router.post('/postaaKuva', item.lisaaKuva);
+
 
 export default router.routes();

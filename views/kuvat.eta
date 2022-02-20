@@ -1,0 +1,23 @@
+<% layout("./layouts.eta") %>
+
+<form action = "/" method = "get">
+    <input type = "submit" value = "takaisin" id="back">
+</form>
+
+<div id = "Kuvat">
+<h3>Kuvat</h3>
+
+<table>
+    <th>
+        <tr>
+            <th>ID</th><th>Kuva</th><th>Selite</th>
+        </tr>
+
+<% it.kuvat.forEach((i) =>{%>
+
+    <tr>
+        <td><%= i[0] %></td> <td><%= i[1] %></td> <td><%= i[2] %></td>
+    </tr>
+<%}); %>
+</table>
+</div>
