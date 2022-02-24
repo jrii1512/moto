@@ -34,7 +34,7 @@ const kuvaKantaan = async (data) => {
 const haePhotot = async () => {
     await client.connect();
     const resp = await client.queryArray('SELECT photo FROM kuvat');
-    console.log("haePhotot response: ", resp.rows);
+    //console.log('haePhotot response: ', resp.rows);
     return resp.rows;
 };
 

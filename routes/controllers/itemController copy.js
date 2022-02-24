@@ -5,12 +5,11 @@ import { getIP } from 'https://deno.land/x/get_ip/mod.ts';
 import { readLines } from 'https://deno.land/std/io/mod.ts';
 import * as path from 'https://deno.land/std/path/mod.ts';
 import { readline } from 'https://deno.land/x/readline@v1.1.0/mod.ts';
-import * as base64 from 'https://deno.land/x/base64@v0.2.1/mod.ts';
+import { createRequire } from 'https://deno.land/std@0.126.0/node/module.ts';
 import * as l from '../../logs/logger.js';
 //var jpeg = require('jpeg-js');
 
 var log = [];
-var imageFilePath;
 debugger;
 
 const showMain = async ({ response }) => {
@@ -98,10 +97,7 @@ const lisaaKuva = async ({ request, response }) => {
         console.log('Kuvan lisäys');
         const body = request.body({ type: 'form-data' });
         const reader = body.value;
-        console.log('reader:', reader);
         const data = await reader.read();
-        console.log('data:' + data.files[0].filename);
-        await Deno.writeFile(imageFilePath, data);
 
         // the data object has two variables: fields and files
         console.log('-- data');
@@ -129,16 +125,14 @@ const lisaaKuva = async ({ request, response }) => {
 
 const haeKuvat = async ({ response }) => {
     console.log('haeKuvat funkkari');
-    const res = await itemServices.haePhotot();
-    console.log('kuvan filename.. ', res);
+    const imageFilePath = './kuvafile.jpg';
+    const buf = await itemServices.haePhotot();
+    const r = buf.body?.getReader();
+    await Deno.writeFile(imageFilePath, new Uint8Array(buf));
 
-    const encodedImg = base64.fromUint8Array(res);
-    console.log(encodedImg);
-    Deno.writeFile('./kuva.jpg', new Uint8Array(res));
-
-    response.headers.set('Content-Type', 'image/jpg');
+    response.headers.set('Content-Type', 'image/jpeg');
     response.body = await renderFile('../views/kuvat.eta', {
-        kuvatiedosto: './kuva.jpg',
+        kuvatiedosto: imageFilePath.read,
     });
 };
 

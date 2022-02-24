@@ -554,3 +554,9 @@ Sun Feb 20 2022 18:00:54 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresEr
 
 Sun Feb 20 2022 18:53:02 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
 
+Thu Feb 24 2022 07:51:40 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Method %TypedArray%.prototype.subarray called on incompatible receiver undefined
+
+Thu Feb 24 2022 08:04:17 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Error parsing args: invalid length 0, expected struct OpenArgs with 3 elements
+
+Thu Feb 24 2022 08:06:06 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Error parsing args: invalid length 0, expected struct OpenArgs with 3 elements
+
