@@ -6,6 +6,7 @@ import { readLines } from 'https://deno.land/std/io/mod.ts';
 import * as path from 'https://deno.land/std/path/mod.ts';
 import { readline } from 'https://deno.land/x/readline@v1.1.0/mod.ts';
 import * as base64 from 'https://deno.land/x/base64@v0.2.1/mod.ts';
+
 import {
     decode as base64Decode,
     encode as base64Encode,
@@ -131,13 +132,13 @@ const lisaaKuva = async ({ request, response }) => {
 const haeKuvat = async ({ response }) => {
     console.log('haeKuvat funkkari');
     const resp = await itemServices.haePhotot();
-    console.log('Serveriltä tullut vastaus: ', resp);
-
-    response.headers.set('Content-Type', 'image/jpg');
-    Deno.writeFile('./kuva.jpg', new Uint8Array(resp));
+    //const base64Encoded = base64.fromUint8Array(resp[0][0]);
+    await Deno.writeFile('./kuva3.jpg', new Uint8Array(resp[0][0]));
+    const image = await Deno.readFile('./kuva3.jpg');
 
     response.body = await renderFile('../views/kuvat.eta', {
-        kuvatiedosto: './kuva.jpg',
+        headers: { 'Content-Type': 'image/jpeg' },
+        kuvafile: image,
         status: 200,
     });
 };
