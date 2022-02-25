@@ -96,23 +96,21 @@ const lisaaKuva = async ({ request, response }) => {
     try {
         console.log('Kuvan lisäys');
         const body = request.body({ type: 'form-data' });
-        const reader = body.value;
-        const data = await reader.read();
+        const reader = body.value.read();
 
         // the data object has two variables: fields and files
-        console.log('-- data');
-        console.log(data);
+        console.log(reader);
 
         // in our case, our form allows submitting only one file, so we
         // look at the details of that file
-        const fileDetails = data.files[0];
+        const fileDetails = reader.files[0];
 
         // the file details contains relevant information about the file,
         // including a temporary folder path into which the file has been stored
         console.log('-- file details');
         console.log(fileDetails);
 
-        await itemServices.kuvaKantaan(data);
+        await itemServices.kuvaKantaan(fileDetails);
         console.log('kuva kantaan kutsuttu');
         //response.redirect('/kuvat');
     } catch (err) {

@@ -19,9 +19,14 @@ const tarkistaHuoltoId = async (response) => {
 
 const kuvaKantaan = async (data) => {
     try {
-        console.log(data);
+        const myobj = data;
         await client.connect();
-        await client.queryArray('INSERT INTO kuvat (photo) VALUES($1)', data);
+        console.log('filename:', myobj);
+
+        await client.queryArray(
+            'INSERT INTO kuvat (photo) VALUES($1::bytea)',
+            data
+        );
         await client.end();
     } catch (err) {
         console.log('Server error, kuvan tallentamisessa tietokantaan, ', err);
@@ -33,7 +38,10 @@ const kuvaKantaan = async (data) => {
 
 const haePhotot = async () => {
     await client.connect();
-    const resp = await client.queryArray('SELECT photo FROM kuvat');
+    //const resp = await client.queryArray('SELECT photo FROM kuvat ORDER BY id DESC LIMIT 1');
+    const resp = await client.queryArray(
+        'SELECT photo FROM kuvat ORDER BY id DESC'
+    );
     //console.log('haePhotot response: ', resp.rows);
     return resp.rows;
 };

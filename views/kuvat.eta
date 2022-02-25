@@ -6,6 +6,9 @@
 
 <div id = "Kuvat">
 <h3>Kuvat</h3>
+<% it.kuvatiedosto.forEach((e) => {%>
 
-    <img src="<%= it.kuvatiedosto %>" alt="kuva">
+    <img src="<%= e[0] %>" alt="">
+
+<%})%>
 </div>

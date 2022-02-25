@@ -6,6 +6,11 @@ import { readLines } from 'https://deno.land/std/io/mod.ts';
 import * as path from 'https://deno.land/std/path/mod.ts';
 import { readline } from 'https://deno.land/x/readline@v1.1.0/mod.ts';
 import * as base64 from 'https://deno.land/x/base64@v0.2.1/mod.ts';
+import {
+    decode as base64Decode,
+    encode as base64Encode,
+} from 'https://deno.land/std@0.82.0/encoding/base64.ts';
+
 import * as l from '../../logs/logger.js';
 //var jpeg = require('jpeg-js');
 
@@ -96,27 +101,23 @@ const haeHuolot = async ({ response }) => {
 const lisaaKuva = async ({ request, response }) => {
     try {
         console.log('Kuvan lisäys');
-        const body = request.body({ type: 'form-data' });
-        const reader = body.value;
-        console.log('reader:', reader);
-        const data = await reader.read();
-        console.log('data:' + data.files[0].filename);
-        await Deno.writeFile(imageFilePath, data);
+        const body = await request.body({ type: 'form-data' });
+        console.log('image in lisaaKuva:', body);
+        const reader = await body.value.read();
 
         // the data object has two variables: fields and files
-        console.log('-- data');
-        console.log(data);
+        console.log(reader);
 
         // in our case, our form allows submitting only one file, so we
         // look at the details of that file
-        const fileDetails = data.files[0];
+        const fileDetails = reader.files[0];
 
         // the file details contains relevant information about the file,
         // including a temporary folder path into which the file has been stored
         console.log('-- file details');
         console.log(fileDetails);
 
-        await itemServices.kuvaKantaan(data);
+        await itemServices.kuvaKantaan(fileDetails);
         console.log('kuva kantaan kutsuttu');
         //response.redirect('/kuvat');
     } catch (err) {
@@ -129,16 +130,15 @@ const lisaaKuva = async ({ request, response }) => {
 
 const haeKuvat = async ({ response }) => {
     console.log('haeKuvat funkkari');
-    const res = await itemServices.haePhotot();
-    console.log('kuvan filename.. ', res);
-
-    const encodedImg = base64.fromUint8Array(res);
-    console.log(encodedImg);
-    Deno.writeFile('./kuva.jpg', new Uint8Array(res));
+    const resp = await itemServices.haePhotot();
+    console.log('Serveriltä tullut vastaus: ', resp);
 
     response.headers.set('Content-Type', 'image/jpg');
+    Deno.writeFile('./kuva.jpg', new Uint8Array(resp));
+
     response.body = await renderFile('../views/kuvat.eta', {
         kuvatiedosto: './kuva.jpg',
+        status: 200,
     });
 };
 

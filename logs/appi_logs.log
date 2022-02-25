@@ -560,3 +560,105 @@ Thu Feb 24 2022 08:04:17 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError:
 
 Thu Feb 24 2022 08:06:06 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Error parsing args: invalid length 0, expected struct OpenArgs with 3 elements
 
+Thu Feb 24 2022 16:14:39 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: form is not defined
+
+Thu Feb 24 2022 16:15:40 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'Canvas_Image')
+
+Thu Feb 24 2022 16:16:12 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 16:16:35 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 16:16:35 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 16:17:13 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 16:17:40 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 16:17:58 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 16:19:11 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Image.replace is not a function
+
+Thu Feb 24 2022 16:21:06 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'replace')
+
+Thu Feb 24 2022 16:27:16 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 16:29:11 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 16:38:02 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: function bytea(unknown) does not exist
+
+Thu Feb 24 2022 16:42:54 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: permission denied for function pg_read_binary_file
+
+Thu Feb 24 2022 16:48:18 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: permission denied for function pg_read_binary_file
+
+Thu Feb 24 2022 16:48:18 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: permission denied for function pg_read_binary_file
+
+Thu Feb 24 2022 16:48:19 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: permission denied for function pg_read_binary_file
+
+Thu Feb 24 2022 16:49:03 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 16:49:03 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 16:49:05 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 17:52:59 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: syntax error at or near "::"
+
+Thu Feb 24 2022 17:52:59 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: syntax error at or near "::"
+
+Thu Feb 24 2022 17:53:19 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: syntax error at or near "::"
+
+Thu Feb 24 2022 17:53:29 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 17:57:46 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 17:58:15 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 17:59:04 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 18:00:15 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 18:01:01 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 18:01:44 GMT+0200 (Itä-Euroopan normaaliaika)_error: ReferenceError: files is not defined
+
+Thu Feb 24 2022 18:09:48 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 18:11:15 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 18:12:38 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 18:12:38 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 18:12:50 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 18:13:22 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 18:13:48 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'data')
+
+Thu Feb 24 2022 18:14:24 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'files')
+
+Thu Feb 24 2022 18:14:48 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
+Thu Feb 24 2022 18:15:10 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading 'filename')
+
+Thu Feb 24 2022 18:15:25 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 18:15:45 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 18:17:43 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 18:18:17 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 18:41:18 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Thu Feb 24 2022 18:43:07 GMT+0200 (Itä-Euroopan normaaliaika)_error: PostgresError: invalid input syntax for type bytea
+
+Fri Feb 25 2022 05:41:19 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: body.value.readFile is not a function
+
+Fri Feb 25 2022 05:42:19 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Error parsing args: serde_v8 error: ExpectedString
+
+Fri Feb 25 2022 05:43:30 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: request.respond is not a function
+
+Fri Feb 25 2022 05:44:28 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: request.response is not a function
+
+Fri Feb 25 2022 06:06:17 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
+
