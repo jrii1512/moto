@@ -5,8 +5,6 @@
 </form>
 
 <div id = "Kuvat">
-<h3>Kuvat</h3>
-<% it.kuvafile.forEach((e) => {%>
-    <img src="<%= e[0] %>" alt="">
-<%})%>
+<h3>Kuvat</h3 >
+    <img src="<%= it.kuvafile %>" alt="photo">
 </div>

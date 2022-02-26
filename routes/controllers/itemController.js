@@ -16,7 +16,7 @@ import * as l from '../../logs/logger.js';
 //var jpeg = require('jpeg-js');
 
 var log = [];
-var imageFilePath;
+var imageFilePath = '';
 debugger;
 
 const showMain = async ({ response }) => {
@@ -106,6 +106,10 @@ const lisaaKuva = async ({ request, response }) => {
         console.log('image in lisaaKuva:', body);
         const reader = await body.value.read();
 
+        //filename
+        imageFilePath = reader.files[0].filename;
+        console.log('imageFilePath', imageFilePath);
+
         // the data object has two variables: fields and files
         console.log(reader);
 
@@ -132,15 +136,47 @@ const lisaaKuva = async ({ request, response }) => {
 const haeKuvat = async ({ response }) => {
     console.log('haeKuvat funkkari');
     const resp = await itemServices.haePhotot();
-    //const base64Encoded = base64.fromUint8Array(resp[0][0]);
-    await Deno.writeFile('./kuva3.jpg', new Uint8Array(resp[0][0]));
-    const image = await Deno.readFile('./kuva3.jpg');
+    const str = String.fromCharCode(...resp[0][0]);
+    console.log('str:', str);
+    let arr = [];
+    let i = 0;
+    arr = str.split('"');
+    arr.forEach((e) => {
+        console.log([i], e);
+        i++;
+        imageFilePath = arr[11];
+    });
+    console.log('filename:', imageFilePath);
+
+    await Deno.writeFile('jr.jpg', new Uint8Array(resp[0][0]));
+    let imageFile = await Deno.readFile('./jr.jpg');
+    console.log('imageFile:', imageFile);
+    const pathTest = 'file:///c:/Omakuva.jpg';
 
     response.body = await renderFile('../views/kuvat.eta', {
         headers: { 'Content-Type': 'image/jpeg' },
-        kuvafile: image,
+        kuvafile: pathTest,
         status: 200,
     });
+
+    /*
+    let data = inputStr.replace('\\', '\\\\');
+    const strDecoded = new TextDecoder().decode(new Uint8Array(data));
+    const str = JSON.parse(strDecoded);
+    inputFile.then((response) => console.log('response:', str));
+
+    /*
+    const strDecoded = new TextDecoder().decode(resp[0][0]);
+    const parsedJson = JSON.parse(strDecoded);
+    console.log('str:' + parsedJson);
+    const imageFile = parsedJson.filename;
+
+    response.body = await renderFile('../views/kuvat.eta', {
+        headers: { 'Content-Type': 'image/jpeg' },
+        kuvafile: imageFile,
+        status: 200,
+    });
+    */
 };
 
 export {
