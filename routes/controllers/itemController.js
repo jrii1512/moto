@@ -147,36 +147,22 @@ const haeKuvat = async ({ response }) => {
         imageFilePath = arr[11];
     });
     console.log('filename:', imageFilePath);
+    const convStr = imageFilePath.replace('/', '\\');
+    console.log('convStr:', convStr);
 
-    await Deno.writeFile('jr.jpg', new Uint8Array(resp[0][0]));
-    let imageFile = await Deno.readFile('./jr.jpg');
-    console.log('imageFile:', imageFile);
-    const pathTest = 'file:///c:/Omakuva.jpg';
+    var fileChecker = new File(['hello'], convStr);
+    console.log('fileChecker:', fileChecker);
+    if (fileChecker.length > 0) {
+        await Deno.rename(convStr, './photo.jpg');
+        console.log('Temp file renamed');
+    }
 
+    const kuva = './photo.jpg';
     response.body = await renderFile('../views/kuvat.eta', {
         headers: { 'Content-Type': 'image/jpeg' },
-        kuvafile: pathTest,
+        kuvafile: kuva,
         status: 200,
     });
-
-    /*
-    let data = inputStr.replace('\\', '\\\\');
-    const strDecoded = new TextDecoder().decode(new Uint8Array(data));
-    const str = JSON.parse(strDecoded);
-    inputFile.then((response) => console.log('response:', str));
-
-    /*
-    const strDecoded = new TextDecoder().decode(resp[0][0]);
-    const parsedJson = JSON.parse(strDecoded);
-    console.log('str:' + parsedJson);
-    const imageFile = parsedJson.filename;
-
-    response.body = await renderFile('../views/kuvat.eta', {
-        headers: { 'Content-Type': 'image/jpeg' },
-        kuvafile: imageFile,
-        status: 200,
-    });
-    */
 };
 
 export {

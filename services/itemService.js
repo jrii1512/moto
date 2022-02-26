@@ -40,7 +40,7 @@ const haePhotot = async () => {
     await client.connect();
     //const resp = await client.queryArray('SELECT photo FROM kuvat ORDER BY id DESC LIMIT 1');
     const resp = await client.queryArray(
-        'SELECT photo FROM kuvat ORDER BY id DESC'
+        'SELECT photo FROM kuvat ORDER BY id DESC LIMIT 1'
     );
     //console.log('haePhotot response: ', resp.rows);
     return resp.rows;
