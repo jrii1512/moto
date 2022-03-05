@@ -133,7 +133,7 @@ const lisaaKuva = async ({ request, response }) => {
     }
 };
 
-const haeKuvat = async ({ response }) => {
+const haeKuvat = async ({ request, response }) => {
     console.log('haeKuvat funkkari');
     const resp = await itemServices.haePhotot();
     const str = String.fromCharCode(...resp[0][0]);
@@ -157,12 +157,14 @@ const haeKuvat = async ({ response }) => {
         console.log('Temp file renamed');
     }
 
-    const kuva = './photo.jpg';
+    const image = './photo.jpg';
+
     response.body = await renderFile('../views/kuvat.eta', {
         headers: { 'Content-Type': 'image/jpeg' },
-        kuvafile: kuva,
+        imageFile: image,
         status: 200,
     });
+
 };
 
 export {

@@ -56,13 +56,6 @@
 <form method = "get" action = "/haeYhteenveto">
   <input type = "submit" value = "Kulut / laite" id = "yhteenveto">
 </form>
-<form enctype="multipart/form-data" method = "post" action = "/postaaKuva">
-  <input type = "file"  id = "fileUpload" name = "fileUpload" multiple/>
-  <input type = "submit" value = "Kuvan lahetys" />
-</form>
-<form method = "get" action = "/haeKuvat">
-  <input type = "submit" value = "Kuvien haku" name = "kuvat" id = "kuvat" />
-</form>
 
 
 

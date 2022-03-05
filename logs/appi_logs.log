@@ -662,3 +662,9 @@ Fri Feb 25 2022 05:44:28 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError:
 
 Fri Feb 25 2022 06:06:17 GMT+0200 (Itä-Euroopan normaaliaika)_error: TypeError: Cannot read properties of undefined (reading '0')
 
+Sat Mar 05 2022 20:04:58 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, 100 siiretty Ilkalle maaleja ym varten., 2022-03-05, , 100
+
+Sat Mar 05 2022 20:04:58 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, 100 siiretty Ilkalle maaleja ym varten., 2022-03-05, , 100
+
+Sat Mar 05 2022 20:14:58 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Hankinta, 0, Tuusula, Peltien suojaamiseen tarvikkeita., 2022-03-05, Maalit, ruosteenpoisto yms., 100
+

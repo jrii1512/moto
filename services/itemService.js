@@ -17,35 +17,6 @@ const tarkistaHuoltoId = async (response) => {
     return res.rows[0];
 };
 
-const kuvaKantaan = async (data) => {
-    try {
-        const myobj = data;
-        await client.connect();
-        console.log('filename:', myobj);
-
-        await client.queryArray(
-            'INSERT INTO kuvat (photo) VALUES($1::bytea)',
-            data
-        );
-        await client.end();
-    } catch (err) {
-        console.log('Server error, kuvan tallentamisessa tietokantaan, ', err);
-        const errorNote = new Date() + '_error: ' + err;
-        log.push(errorNote);
-        l.loggaus(log);
-    }
-};
-
-const haePhotot = async () => {
-    await client.connect();
-    //const resp = await client.queryArray('SELECT photo FROM kuvat ORDER BY id DESC LIMIT 1');
-    const resp = await client.queryArray(
-        'SELECT photo FROM kuvat ORDER BY id DESC LIMIT 1'
-    );
-    //console.log('haePhotot response: ', resp.rows);
-    return resp.rows;
-};
-
 const huoltoKantaan = async (
     tyyppi,
     huolto,
@@ -153,7 +124,5 @@ export {
     huoltoKantaan,
     huolot,
     haeHankinnat,
-    haeSumma,
-    kuvaKantaan,
-    haePhotot,
+    haeSumma
 };
