@@ -1,0 +1,19 @@
+<% layout("./layouts.eta") %>
+
+<form action = "/" method = "get">
+    <input type = "submit" value = "takaisin" id="back">
+</form>
+
+
+<h3>Mobile Payn Siirot</h3>
+<table>
+    <th>
+        <tr>
+            <th>Totale</th>
+        </tr>
+
+<tr><td><%= it.mpsumma %></td></tr>
+<p>
+</table>
+</div>
+

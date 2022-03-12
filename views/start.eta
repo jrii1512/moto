@@ -1,7 +1,7 @@
 <% layout("./layouts.eta") %>
 
 <span><%it%></span>
-
+<div id="huolto" class="tabcontent">
     <form action = "/huolot" method = "post" name ="startForm" class="formi">
           <label for="hPVM"><b>Huollon pvm</b></label>
           <input type = "date" name = "hPVM" id = "huoltoPVM">
@@ -23,18 +23,6 @@
           <input type = "text" name = "sijainti" value = "Tuusula" id="s">
         <p>
 
-        <label for="Osa"><b>Osa, koodi</b></label>
-          <textarea rows = "4" cols = "60" id = "osa" name = "osa"></textarea>
-          <!--<input type = "text" name = "huomiot" id = "huomiot" value ="-">-->
-          <p>
-        <!--<label for="osa"><b>Osa</b></label>
-          <input type = "text" name = "osa" id = "osa" value = "-" placeholder = "osa">
-        <p>-->
-
-        <label for="kulu"><b>Kulu</b></label>
-          <input type = "number" name = "kulu" id = "kulu" value = "0">
-        <p>
-
         <label for="huomiot"><b>Huomiot</b></label>
           <textarea rows = "4" cols = "60" id = "huomiot" name = "huomiot" required></textarea>
           <!--<input type = "text" name = "huomiot" id = "huomiot" value ="-">-->
@@ -43,20 +31,44 @@
 
         <input type = "submit" value = "Kantaan" id="laheta">
     </form>
+</div>
+<p>
+
+<div id="hankinta" class="tabcontent">
+    <form action = "/hankinnat" method = "post" name ="startForm" class="formi">
+        <label for="Osa"><b>Osa, koodi</b></label>
+          <textarea rows = "4" cols = "60" id = "osa" name = "osa"></textarea>
+          <p>
+
+        <label for="kulu"><b>Kulu</b></label>
+          <input type = "number" name = "kulu" id = "kulu" value = "0">
+        <p>
+
+        <label for="mp"><b>Mobile pay</b></label>
+          <input type = "checkbox" name = "mp" id = "mp">
+        <p>
+        <input type = "submit" value = "Uusi hankinta" id = "hankinta">
+
+</form>
+</div>
+
+<div id="kyselyt" class="tabcontent">
+  <form method = "get" action = "/haeHankinnat">
+    <input type = "submit" value = "Hankinnat" id = "hankinnat">
+  </form>
   <p>
-<p>
-
-<form method = "get" action = "/huolot">
-  <input type = "submit" value = "Huolot" id = "naytaHuolot">
-</form>
-<p>
-<form method = "get" action = "/haeKulut">
-  <input type = "submit" value = "Hankinnat" id = "kulut">
-</form>
-<form method = "get" action = "/haeYhteenveto">
-  <input type = "submit" value = "Kulut / laite" id = "yhteenveto">
-</form>
-
+    <form method = "get" action = "/haeMPSumma">
+    <input type = "submit" value = "MP" id = "mp">
+  </form>
+  <p>
+    <form method = "get" action = "/haeHuolot">
+      <input type = "submit" value = "Huolot" id = "naytaHuolot">
+    </form>
+    <p>
+    <form method = "get" action = "/haeYhteenveto">
+    <input type = "submit" value = "Kulut / laite" id = "yhteenveto">
+  </form>
+</div>
 
 
 <script>

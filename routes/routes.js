@@ -4,13 +4,11 @@ import * as item from './controllers/itemController.js';
 const router = new Router();
 
 router.get('/', item.showMain);
-router.get('/huolot', item.haeHuolot);
-router.get('/haeKulut', item.haeOstokset);
+router.get('/haeHuolot', item.haeHuolot);
+router.get('/haeHankinnat', item.haeOstokset);
+router.get('/haeMPSumma', item.haeMPYhteenveto);
 router.get('/haeYhteenveto', item.haeYhteenveto);
 router.post('/huolot', item.lisaaHuolto);
-
-router.get('/haeKuvat', item.haeKuvat);
-router.post('/postaaKuva', item.lisaaKuva);
-
+router.post('/hankinnat', item.lisaaHankinta);
 
 export default router.routes();

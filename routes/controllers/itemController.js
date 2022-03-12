@@ -37,6 +37,7 @@ const lisaaHuolto = async ({ request, response }) => {
         const huomiot = formData.get('huomiot');
         const osa = formData.get('osa');
         const kulu = formData.get('kulu');
+        const mp = formData.get('mp');
         const huoltopvm = formData.get('hPVM');
 
         let lisaysStr =
@@ -56,7 +57,9 @@ const lisaaHuolto = async ({ request, response }) => {
             ', ' +
             osa +
             ', ' +
-            kulu;
+            kulu +
+            ',' +
+            mp;
         console.log(lisaysStr);
         log.push(lisaysStr);
         l.loggaus(log);
@@ -69,7 +72,8 @@ const lisaaHuolto = async ({ request, response }) => {
             huomiot,
             huoltopvm,
             osa,
-            kulu
+            kulu,
+            mp
         );
         console.log('huoltoKantaan kutsuttu');
         response.redirect('/huolot');
@@ -77,13 +81,53 @@ const lisaaHuolto = async ({ request, response }) => {
         console.log('Controller error, ', err);
         const errorNote = new Date() + '_error: ' + err;
         log.push(errorNote);
-        loggaus(log);
+        l.loggaus(log);
+    }
+};
+
+const lisaaHankinta = async ({ request, response }) => {
+    try {
+        console.log('Hankinnan lisäys');
+        const body = request.body();
+        const formData = await body.value;
+        console.log('hankinta formi ', formData);
+        const osa = formData.get('osa');
+        const kulu = formData.get('kulu');
+        const mp = formData.get('mp');
+
+        let lisaysStr =
+            new Date() +
+            ': itemController, hankinta lisätään seuraavilla parametreillä: ' +
+            osa +
+            ', ' +
+            kulu +
+            ',' +
+            mp;
+        console.log(lisaysStr);
+        log.push(lisaysStr);
+        l.loggaus(log);
+
+        await itemServices.hankintaKantaan(osa, kulu, mp);
+        console.log('hankintaKantaan kutsuttu');
+        response.redirect('/hankinnat');
+    } catch (err) {
+        console.log('Controller error, ', err);
+        const errorNote = new Date() + '_error: ' + err;
+        log.push(errorNote);
+        l.loggaus(log);
     }
 };
 
 const haeYhteenveto = async ({ response }) => {
     response.body = await renderFile('../views/yhteenveto.eta', {
         summat: await itemServices.haeSumma(),
+    });
+};
+
+const haeMPYhteenveto = async ({ response }) => {
+    console.log('Controller, haeMPYhteenveto');
+    response.body = await renderFile('../views/mp.eta', {
+        mpsumma: await itemServices.haeMPSumma(),
     });
 };
 
@@ -99,80 +143,12 @@ const haeHuolot = async ({ response }) => {
     });
 };
 
-const lisaaKuva = async ({ request, response }) => {
-    try {
-        console.log('Kuvan lisäys');
-        const body = await request.body({ type: 'form-data' });
-        console.log('image in lisaaKuva:', body);
-        const reader = await body.value.read();
-
-        //filename
-        imageFilePath = reader.files[0].filename;
-        console.log('imageFilePath', imageFilePath);
-
-        // the data object has two variables: fields and files
-        console.log(reader);
-
-        // in our case, our form allows submitting only one file, so we
-        // look at the details of that file
-        const fileDetails = reader.files[0];
-
-        // the file details contains relevant information about the file,
-        // including a temporary folder path into which the file has been stored
-        console.log('-- file details');
-        console.log(fileDetails);
-
-        await itemServices.kuvaKantaan(fileDetails);
-        console.log('kuva kantaan kutsuttu');
-        //response.redirect('/kuvat');
-    } catch (err) {
-        console.log('Controller error kuva, ', err);
-        const errorNote = new Date() + '_error: ' + err;
-        log.push(errorNote);
-        l.loggaus(log);
-    }
-};
-
-const haeKuvat = async ({ request, response }) => {
-    console.log('haeKuvat funkkari');
-    const resp = await itemServices.haePhotot();
-    const str = String.fromCharCode(...resp[0][0]);
-    console.log('str:', str);
-    let arr = [];
-    let i = 0;
-    arr = str.split('"');
-    arr.forEach((e) => {
-        console.log([i], e);
-        i++;
-        imageFilePath = arr[11];
-    });
-    console.log('filename:', imageFilePath);
-    const convStr = imageFilePath.replace('/', '\\');
-    console.log('convStr:', convStr);
-
-    var fileChecker = new File(['hello'], convStr);
-    console.log('fileChecker:', fileChecker);
-    if (fileChecker.length > 0) {
-        await Deno.rename(convStr, './photo.jpg');
-        console.log('Temp file renamed');
-    }
-
-    const image = './photo.jpg';
-
-    response.body = await renderFile('../views/kuvat.eta', {
-        headers: { 'Content-Type': 'image/jpeg' },
-        imageFile: image,
-        status: 200,
-    });
-
-};
-
 export {
     showMain,
     haeHuolot,
     lisaaHuolto,
+    lisaaHankinta,
     haeOstokset,
     haeYhteenveto,
-    haeKuvat,
-    lisaaKuva,
+    haeMPYhteenveto,
 };

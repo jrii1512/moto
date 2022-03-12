@@ -9,15 +9,18 @@
 <table>
     <th>
         <tr>
-            <th>Väline</th><th>Osa</th><th>Kulu</th>
+            <th>Osa</th><th>Kulu</th><th>IHa</th>
         </tr>
 
 <% it.kustannukset.forEach((h) =>{%>
-
     <tr>
-        <td><%= h[0] %></td> <td><%= h[1] %></td> <td><%= h[2] %></td>
+        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td>
     </tr>
 <%}); %>
+<p>
+
+
+
 
 </table>
 </div>
