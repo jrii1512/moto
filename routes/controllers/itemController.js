@@ -108,8 +108,8 @@ const lisaaHankinta = async ({ request, response }) => {
         l.loggaus(log);
 
         await itemServices.hankintaKantaan(osa, kulu, mp);
-        console.log('hankintaKantaan kutsuttu');
-        response.redirect('/hankinnat');
+        console.log('Controller, hankintaKantaan kutsuttu');
+        response.redirect('/');
     } catch (err) {
         console.log('Controller error, ', err);
         const errorNote = new Date() + '_error: ' + err;

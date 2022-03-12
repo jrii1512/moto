@@ -1,4 +1,10 @@
 <% layout("./layouts.eta") %>
+<style>
+.tablinks{
+    visibility: hidden;
+}
+</style>
+</head>
 
 <form action = "/" method = "get">
     <input type = "submit" value = "takaisin" id="back">

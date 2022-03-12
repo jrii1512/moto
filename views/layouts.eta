@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <script>
 function switchTab(evt, target) {
+console.log('target:', target);
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -22,6 +24,8 @@ function switchTab(evt, target) {
   document.getElementById(target).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+document.getElementById("hankinta").click();
 </script>
 
 <meta charset="utf-8">
@@ -39,6 +43,17 @@ function switchTab(evt, target) {
     width: 60%;
     align:center;
     }
+
+div#kyselyt{
+    background-color: black;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    width: 50%;
+    align:left;
+
+}
 
 .formi{
   margin-left:0;
@@ -331,22 +346,22 @@ div#kuvat{
 }
 </style>
 </head>
-<body>
+<body onload="switchTab(event, 'huolto')">
 
 
+
+<ul>
 <div class = "box">
 <div class="tab">
-  <button class="tablinks" onclick="switchTab(event, 'huolto')">Huoltorekisteri</button>
+  <button class="tablinks" onclick="switchTab(event, 'huolto')" id="def">Huoltorekisteri</button>
   <button class="tablinks" onclick="switchTab(event, 'hankinta')">Hankinta</button>
   <button class="tablinks" onclick="switchTab(event, 'kyselyt')">Kyselyt</button>
+
 </div>
 
-  <ul>
     <%~ it.body %>
-
-
-  </ul>
 </div>
+</ul>
 </body>
 </html>
 
