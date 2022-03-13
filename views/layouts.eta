@@ -35,7 +35,7 @@ document.getElementById("hankinta").click();
 
 .box{
     margin:auto;
-    background-color: black;
+    background-color: gray;
     border: 5px solid;
     border-radius: 10px;
     padding: 10px;
@@ -50,14 +50,15 @@ span#separator{
 }
 
 div#kyselyt{
-    background-color: black;
-    border: 5px solid;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 5px 10px;
-    width: 50%;
-    align:left;
-
+   border: solid, 1px;
+    border-color:black;
+    background-color: gray;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:12px;
+    font-weight: bold;
 }
 
 .formi{
@@ -183,17 +184,6 @@ input#huoltoPVM{
     font-weight: bold;
 }
 
-#naytaHuolot{
-    border: solid, 1px;
-    border-color:black;
-    background-color: white;
-    color: black;
-    padding: 3px;
-    text-align: center;
-    display: inline-block;
-    font-size:18px;
-    font-weight: bold;
-}
 
 label{
     display:inline-block;
@@ -227,6 +217,18 @@ div#huollot{
     width: 100%;
     align:center;
     }
+
+div#kyselyt{
+   border: solid, 1px;
+    border-color:black;
+    background-color: gray;
+    color: black;
+    padding: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size:24px;
+    font-weight: bold;
+}
 
 
 .formi{
@@ -331,17 +333,7 @@ input#huoltoPVM{
     font-weight: bold;
 }
 
-#naytaHuolot{
-    border: solid, 1px;
-    border-color:black;
-    background-color: white;
-    color: black;
-    padding: 3px;
-    text-align: center;
-    display: inline-block;
-    font-size:36px;
-    font-weight: bold;
-}
+
 
 label{
     width:200px;
