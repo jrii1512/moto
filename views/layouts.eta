@@ -44,6 +44,11 @@ document.getElementById("hankinta").click();
     align:center;
     }
 
+span#separator{
+  margin-top:30;
+  margin-bottom:30;
+}
+
 div#kyselyt{
     background-color: black;
     border: 5px solid;
@@ -66,6 +71,21 @@ div#kyselyt{
   border: 1px solid red;
   border-color: red;
   border-radius: 10px;
+}
+
+#kawa{
+color:green;
+}
+#ford{
+color:gray;
+}
+#skoda{
+color:red;
+background-color:white;
+}
+
+h3{
+color:white;
 }
 
 table, td {

@@ -53,13 +53,7 @@ const lisaaHuolto = async ({ request, response }) => {
             ', ' +
             huomiot +
             ', ' +
-            huoltopvm +
-            ', ' +
-            osa +
-            ', ' +
-            kulu +
-            ',' +
-            mp;
+            huoltopvm;
         console.log(lisaysStr);
         log.push(lisaysStr);
         l.loggaus(log);
@@ -70,13 +64,10 @@ const lisaaHuolto = async ({ request, response }) => {
             hetki,
             sijainti,
             huomiot,
-            huoltopvm,
-            osa,
-            kulu,
-            mp
+            huoltopvm
         );
         console.log('huoltoKantaan kutsuttu');
-        response.redirect('/huolot');
+        response.redirect('/');
     } catch (err) {
         console.log('Controller error, ', err);
         const errorNote = new Date() + '_error: ' + err;

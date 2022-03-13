@@ -3,6 +3,9 @@
 .tablinks{
     visibility: hidden;
 }
+
+
+
 </style>
 </head>
 
@@ -15,19 +18,32 @@
 <table>
     <th>
         <tr>
-            <th>Osa</th><th>Kulu</th><th>IHa</th>
+            <th>Väline</th><th>Osa</th><th>Kulu</th><th>MP</th>
         </tr>
 
 <% it.kustannukset.forEach((h) =>{%>
-    <tr>
-        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td>
+
+<% if (h[0] === "Kawasaki KX 250F") {%>
+    <tr id = "kawa">
+        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td><td><%= h[3] %></td>
     </tr>
+<%};%>
+<span id = "separator"></span>
+<% if (h[0] === "Ford Transit") {%>
+
+    <tr id = "ford">
+        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td><td><%= h[3] %></td>
+    </tr>
+<%};%>
+<% if (h[0] === "Octavia") {%>
+
+    <tr id = "skoda">
+        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td><td><%= h[3] %></td>
+    </tr>
+<%};%>
+
 <%}); %>
 <p>
-
-
-
-
 </table>
 </div>
 

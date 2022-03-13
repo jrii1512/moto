@@ -47,7 +47,7 @@
         <label for="mp"><b>Mobile pay</b></label>
           <input type = "checkbox" name = "mp" id = "mp">
         <p>
-        <input type = "submit" value = "Uusi hankinta" id = "hankinta">
+        <input type = "submit" value = "Kantaan" id = "hankinta">
 
 </form>
 </div>

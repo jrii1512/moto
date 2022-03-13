@@ -3,6 +3,9 @@
 .tablinks{
     visibility: hidden;
 }
+h3{
+  color:white;
+}
 </style>
 </head>
 <form action = "/" method = "get">

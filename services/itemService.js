@@ -77,7 +77,7 @@ const huolot = async () => {
 const haeSumma = async () => {
     await client.connect();
     const resp = await client.queryArray(
-        'SELECT huoltorekisteri.valine, SUM(hankinnat.kulu) FROM huoltorekisteri JOIN hankinnat ON huoltorekisteri.huolto_id = hankinnat.huolto_id GROUP BY valine'
+        'SELECT valine, SUM(hankinnat.kulu) FROM hankinnat GROUP BY valine'
     );
     await client.end();
     console.log('haeSummat res paluttu: ', resp.rows);
@@ -98,16 +98,16 @@ const haeHankinnat = async () => {
     console.log('Hankintojen haku');
     await client.connect();
     const res = await client.queryArray(
-        'SELECT osa, kulu, mpay FROM hankinnat'
+        'SELECT valine, osa, kulu, mpay FROM hankinnat'
     );
     await client.end();
 
     res.rows.forEach((element) => {
-        console.log('element:', element[2]);
-        if (element[2]) {
-            element[2] = 'MP';
+        console.log('element:', element[3]);
+        if (element[3]) {
+            element[3] = 'MP';
         } else {
-            element[2] = '';
+            element[3] = '';
         }
     });
     console.log('Hankinnat: ', res.rows);
