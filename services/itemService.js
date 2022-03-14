@@ -51,11 +51,12 @@ const huoltoKantaan = async (
     console.log('insert executed');
 };
 
-const hankintaKantaan = async (osa, kulu, mp) => {
+const hankintaKantaan = async (valine, osa, kulu, mp) => {
     await client.connect();
     console.log('service, hankinta kantaan');
     await client.queryArray(
-        'INSERT INTO hankinnat (osa, kulu, mpay) VALUES($1, $2, $3)',
+        'INSERT INTO hankinnat (valine, osa, kulu, mpay) VALUES($1, $2, $3, $4)',
+        valine,
         osa,
         kulu,
         mp

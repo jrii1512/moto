@@ -82,6 +82,7 @@ const lisaaHankinta = async ({ request, response }) => {
         const body = request.body();
         const formData = await body.value;
         console.log('hankinta formi ', formData);
+        const valine = formData.get('valine');
         const osa = formData.get('osa');
         const kulu = formData.get('kulu');
         const mp = formData.get('mp');
@@ -89,6 +90,8 @@ const lisaaHankinta = async ({ request, response }) => {
         let lisaysStr =
             new Date() +
             ': itemController, hankinta lisätään seuraavilla parametreillä: ' +
+            valine +
+            ', ' +
             osa +
             ', ' +
             kulu +
@@ -98,7 +101,7 @@ const lisaaHankinta = async ({ request, response }) => {
         log.push(lisaysStr);
         l.loggaus(log);
 
-        await itemServices.hankintaKantaan(osa, kulu, mp);
+        await itemServices.hankintaKantaan(valine, osa, kulu, mp);
         console.log('Controller, hankintaKantaan kutsuttu');
         response.redirect('/');
     } catch (err) {

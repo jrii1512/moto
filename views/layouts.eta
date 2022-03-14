@@ -333,8 +333,6 @@ input#huoltoPVM{
     font-weight: bold;
 }
 
-
-
 label{
     width:200px;
     height:40px;

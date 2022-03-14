@@ -12,7 +12,7 @@
         <p>
 
         <label for="huolto"><b>Huolto</b></label>
-          <input type = "text" name = "huolto" value = "Hankinta" required>
+          <input type = "text" name = "huolto" value = "Pikahuolto" required>
           <p>
 
         <label for="hetki"><b>KM / tunti</b></label>
@@ -36,6 +36,11 @@
 
 <div id="hankinta" class="tabcontent">
     <form action = "/hankinnat" method = "post" name ="startForm" class="formi">
+
+        <label for="valine"><b>Valine</b></label>
+          <textarea rows = "4" cols = "60" id = "valine" name = "valine" value = "Ford Transit"></textarea>
+          <p>
+
         <label for="Osa"><b>Osa, koodi</b></label>
           <textarea rows = "4" cols = "60" id = "osa" name = "osa"></textarea>
           <p>
