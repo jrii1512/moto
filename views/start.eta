@@ -37,8 +37,8 @@
 <div id="hankinta" class="tabcontent">
     <form action = "/hankinnat" method = "post" name ="startForm" class="formi">
 
-        <label for="valine"><b>Valine</b></label>
-          <textarea rows = "4" cols = "60" id = "valine" name = "valine" value = "Ford Transit"></textarea>
+        <label for="valine"><b>Väline</b></label>
+          <input type = "text" id = "valine" name = "valine" value = "Ford Transit" />
           <p>
 
         <label for="Osa"><b>Osa, koodi</b></label>

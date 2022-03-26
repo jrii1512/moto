@@ -71,7 +71,14 @@ const huolot = async () => {
         'SELECT * FROM huoltorekisteri ORDER BY huolto_id DESC'
     );
     await client.end();
-    console.log('Huolot -> ' + res.rows);
+
+    
+    res.rows.forEach((e) => {
+        console.log('Huolot -> ' + e[5]);
+        e[5] = new Date(e[5]).toLocaleDateString('fi-FI');
+    })
+
+    
     return res.rows;
 };
 
