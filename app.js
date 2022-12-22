@@ -15,7 +15,7 @@ configure({
 
 const app = new Application({
     serverConstructor: HttpServerStd,
-});
+})
 
 let port = 7775;
 if (Deno.args.length > 0) {
