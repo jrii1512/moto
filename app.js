@@ -1,4 +1,4 @@
-import { fcgi } from 'https://deno.land/x/fcgi@v0.0.21/mod.ts';
+//import { fcgi } from 'https://deno.land/x/fcgi@v0.0.21/mod.ts';
 import {
     Application,
     HttpServerStd,
