@@ -25,6 +25,7 @@ if (Deno.args.length > 0) {
 
 app.use(routes);
 app.listen(`:${port}`);
+console.log(`Listening port ${port}`)
 
 
 

@@ -3,7 +3,9 @@ import * as item from './controllers/itemController.js';
 
 const router = new Router();
 
-router.get('/', item.showMain);
+router.get('/features', item.showFeatures);
+router.get('/', item.showLogin);
+router.post('/login', item.loginCheck)
 router.get('/haeHuolot', item.haeHuolot);
 router.get('/haeHankinnat', item.haeOstokset);
 router.get('/haeMPSumma', item.haeMPYhteenveto);

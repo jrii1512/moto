@@ -353,6 +353,17 @@ div#huollot{
 div#kuvat{
   background-color: white;
 }
+
+.loginFormi{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  width:300px;
+  height: 300px;
+  border-style:solid 1px;
+  border-radius: 10px;
+}
+
 </style>
 </head>
 <body onload="switchTab(event, 'huolto')">

@@ -1,0 +1,24 @@
+<% layout("./layouts.eta") %>
+
+<span><%it%></span>
+<div id="login">
+  <form action="/login" method="post" name="loginForm" className="loginFormi">
+
+    <label for="username"><b>Käyttäjätunnus</b></label>
+    <input type="email" name="ktunnus" value="jriimala@gmail.com" required>
+    
+    <p>
+    
+    <label for="pword"><b>Salasana</b></label>
+    <input type="password" name="pword" required>
+    
+    <p>
+    
+    <input type="submit" value="Lähetä" id="laheta">
+  </form>
+</div>
+
+<script>
+  const event = new Date();
+  document.getElementById('huoltoPVM').valueAsDate = event;
+</script>
