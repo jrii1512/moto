@@ -1,4 +1,4 @@
-import { fcgi } from 'https://deno.land/x/fcgi@v0.0.21/mod.ts';
+//import { fcgi } from 'https://deno.land/x/fcgi@v0.0.21/mod.ts';
 import {
     Application,
     HttpServerStd,
@@ -15,7 +15,7 @@ configure({
 
 const app = new Application({
     serverConstructor: HttpServerStd,
-});
+})
 
 let port = 7775;
 if (Deno.args.length > 0) {
