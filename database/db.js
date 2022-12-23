@@ -8,3 +8,5 @@ export const client = new Client({
     port: 5432,
   });
 
+  console.log("db.js, client string:", client)
+

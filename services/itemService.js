@@ -84,6 +84,7 @@ const huolot = async () => {
 
 const haeSumma = async () => {
     await client.connect();
+    console.log("client string:", client)
     const resp = await client.queryArray(
         'SELECT valine, SUM(hankinnat.kulu) FROM hankinnat GROUP BY valine'
     );

@@ -1,49 +1,57 @@
 <% layout("./layouts.eta") %>
 <style>
-.tablinks{
+  .tablinks {
     visibility: hidden;
-}
-
-
-
+  }
 </style>
 </head>
 
-<form action = "/" method = "get">
-    <input type = "submit" value = "takaisin" id="back">
+<form action="/" method="get">
+  <input type="submit" value="takaisin" id="back">
 </form>
 
 
 <h3>Hankinnat</h3>
 <table>
-    <th>
-        <tr>
-            <th>Väline</th><th>Osa</th><th>Kulu</th><th>MP</th>
-        </tr>
-
-<% it.kustannukset.forEach((h) =>{%>
-
-<% if (h[0] === "Kawasaki KX 250F") {%>
-    <tr id = "kawa">
-        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td><td><%= h[3] %></td>
+  <th>
+    <tr>
+      <th>Väline</th>
+      <th>Osa</th>
+      <th>Kulu</th>
+      <th>MP</th>
     </tr>
-<%};%>
-<span id = "separator"></span>
-<% if (h[0] === "Ford Transit") {%>
 
-    <tr id = "ford">
-        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td><td><%= h[3] %></td>
+    <% it.kustannukset.forEach((h) =>{%>
+
+    <% if (h[0] === "Kawasaki KX 250F") {%>
+    <tr id="kawa">
+      <td><%= h[0] %></td>
+      <td><%= h[1] %></td>
+      <td><%= h[2] %></td>
+      <td><%= h[3] %></td>
     </tr>
-<%};%>
-<% if (h[0] === "Octavia") {%>
+    <%};%>
+    <span id="separator"></span>
+    <% if (h[0] === "Ford Transit") {%>
 
-    <tr id = "skoda">
-        <td><%= h[0] %></td> <td><%= h[1] %></td><td><%= h[2] %></td><td><%= h[3] %></td>
+    <tr id="ford">
+      <td><%= h[0] %></td>
+      <td><%= h[1] %></td>
+      <td><%= h[2] %></td>
+      <td><%= h[3] %></td>
     </tr>
-<%};%>
+    <%};%>
+    <% if (h[0] === "Octavia") {%>
 
-<%}); %>
-<p>
+    <tr id="skoda">
+      <td><%= h[0] %></td>
+      <td><%= h[1] %></td>
+      <td><%= h[2] %></td>
+      <td><%= h[3] %></td>
+    </tr>
+    <%};%>
+
+    <%}); %>
+    <p>
 </table>
 </div>
-

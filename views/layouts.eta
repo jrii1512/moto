@@ -62,8 +62,9 @@ div#kyselyt{
 }
 
 .formi{
-  margin-left:0;
-  margin-right:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 100px;
   margin-bottom:100px;
   width:80%;
@@ -113,10 +114,8 @@ input{
   color: black;
   }
 
-input#mp{
-  horizontal-align: left;
-  position: relative;
-  bottom: 1px;
+#mp {
+  margin-left:-19%;
 }
 
 input#back{

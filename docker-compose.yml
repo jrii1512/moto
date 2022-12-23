@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  frontend:
+    build: . 
+    container_name: moto
+    ports:
+      - "7775:7775"

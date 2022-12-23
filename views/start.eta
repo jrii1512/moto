@@ -2,80 +2,82 @@
 
 <span><%it%></span>
 <div id="huolto" class="tabcontent">
-    <form action = "/huolot" method = "post" name ="startForm" class="formi">
-          <label for="hPVM"><b>Huollon pvm</b></label>
-          <input type = "date" name = "hPVM" id = "huoltoPVM">
-          <p>
+  <form action="/huolot" method="post" name="startForm" className="formi">
+    <label for="hPVM"><b>Huollon pvm</b></label>
+    <input type="date" name="hPVM" id="huoltoPVM">
+    <p>
 
-        <label for="mototyyppi"><b>Kohde</b></label>
-          <input type = "text" name = "mototyyppi" value="Ford Transit" required>
-        <p>
+      <label for="mototyyppi"><b>Kohde</b></label>
+      <input type="text" name="mototyyppi" value="Ford Transit" required>
+    <p>
 
-        <label for="huolto"><b>Huolto</b></label>
-          <input type = "text" name = "huolto" value = "Pikahuolto" required>
-          <p>
+      <label for="huolto"><b>Huolto</b></label>
+      <input type="text" name="huolto" value="Pikahuolto" required>
+    <p>
 
-        <label for="hetki"><b>KM / tunti</b></label>
-          <input type = "number" name = "hetki" id = "hetki" value = "0">
-        <p>
+      <label for="hetki"><b>KM / tunti</b></label>
+      <input type="number" name="hetki" id="hetki" value="0">
+    <p>
 
-        <label for="sijainti"><b>Paikka</b></label>
-          <input type = "text" name = "sijainti" value = "Tuusula" id="s">
-        <p>
+      <label for="sijainti"><b>Paikka</b></label>
+      <input type="text" name="sijainti" value="Tuusula" id="s">
+    <p>
 
-        <label for="huomiot"><b>Huomiot</b></label>
-          <textarea rows = "4" cols = "60" id = "huomiot" name = "huomiot" required></textarea>
-          <!--<input type = "text" name = "huomiot" id = "huomiot" value ="-">-->
-        <p><p>
+      <label for="huomiot"><b>Huomiot</b></label>
+      <textarea rows="4" cols="60" id="huomiot" name="huomiot" required></textarea>
+      <!--<input type = "text" name = "huomiot" id = "huomiot" value ="-">-->
+    <p>
+    <p>
 
 
-        <input type = "submit" value = "Kantaan" id="laheta">
-    </form>
+      <input type="submit" value="Kantaan" id="laheta">
+  </form>
 </div>
 <p>
 
 <div id="hankinta" class="tabcontent">
-    <form action = "/hankinnat" method = "post" name ="startForm" class="formi">
+  <form action="/hankinnat" method="post" name="startForm" className="formi">
 
-        <label for="valine"><b>Väline</b></label>
-          <input type = "text" id = "valine" name = "valine" value = "Ford Transit" />
-          <p>
+    <label for="valine"><b>Väline</b></label>
+    <input type="text" id="valine" name="valine" value="Ford Transit" />
+    <p>
 
-        <label for="Osa"><b>Osa, koodi</b></label>
-          <textarea rows = "4" cols = "60" id = "osa" name = "osa"></textarea>
-          <p>
+      <label for="Osa"><b>Osa, koodi</b></label>
+      <textarea rows="4" cols="60" id="osa" name="osa"></textarea>
+    <p>
 
-        <label for="kulu"><b>Kulu</b></label>
-          <input type = "number" name = "kulu" id = "kulu" value = "0">
-        <p>
+      <label for="kulu"><b>Kulu</b></label>
+      <input type="number" name="kulu" id="kulu" value="0">
+    <p>
 
-        <label for="mp"><b>Mobile pay</b></label>
-          <input type = "checkbox" name = "mp" id = "mp">
-        <p>
-        <input type = "submit" value = "Kantaan" id = "hankinta">
+      <label for="mp"><b>Mobile pay</b></label>
+      <input type="checkbox" name="mp" id="mp">
+    <p>
+      <input type="submit" value="Kantaan" id="hankinta">
 
-</form>
+  </form>
 </div>
 
 <div id="kyselyt" class="tabcontent">
-  <form method = "get" action = "/haeHankinnat">
-    <input type = "submit" value = "Hankinnat" id = "hankinnat">
+  <form method="get" action="/haeHankinnat">
+    <input type="submit" value="Hankinnat" id="hankinnat">
   </form>
   <p>
-    <form method = "get" action = "/haeMPSumma">
-    <input type = "submit" value = "MP" id = "mp">
+  <form method="get" action="/haeMPSumma">
+    <input type="submit" value="MP" id="mpkulut">
   </form>
   <p>
-    <form method = "get" action = "/haeHuolot">
-      <input type = "submit" value = "Huolot" id = "naytaHuolot">
-    </form>
-    <p>
-    <form method = "get" action = "/haeYhteenveto">
-    <input type = "submit" value = "Kulut / laite" id = "yhteenveto">
+  <form method="get" action="/haeHuolot">
+    <input type="submit" value="Huolot" id="naytaHuolot">
+  </form>
+  <p>
+  <form method="get" action="/haeYhteenveto">
+    <input type="submit" value="Kulut / laite" id="yhteenveto">
   </form>
 </div>
 
 
 <script>
-const event = new Date();
-document.getElementById('huoltoPVM').valueAsDate = event;</script>
+  const event = new Date();
+  document.getElementById('huoltoPVM').valueAsDate = event;
+</script>

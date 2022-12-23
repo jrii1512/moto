@@ -9,6 +9,8 @@ const client = new Pool({
   port: 5432,
 });
 
+//postgres://lelmphiv:HC2rLb4pLhUVhu3GszaBb0GfPPIkIhKz@abul.db.elephantsql.com:5432/lelmphiv"
+
 
 const executeQuery = async (query, ...args) => {
   const response = {};
@@ -17,6 +19,8 @@ const executeQuery = async (query, ...args) => {
 
   try {
     client = await client.connect();
+    console.log("moto connection")
+    console.log("connection string:", client)    
     const result = await client.queryObject(query, ...args);
     if (result.rows) {
       console.log(result.rows);
