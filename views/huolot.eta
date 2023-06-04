@@ -7,10 +7,10 @@
 </style>
 </head>
 
-<form action = "/" method = "get">
+
+<form action = "/haeYhteenveto" method = "get">
     <input type = "submit" value = "takaisin" id="back">
 </form>
-
 <div id = "huollot">
 
 <h3>Huollot</h3>

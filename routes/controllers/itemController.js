@@ -19,9 +19,16 @@ var log = [];
 var imageFilePath = "";
 debugger;
 
+const loggedIn = sessionStorage.getItem("loggedIn")
+
 const showLogin = async ({ response }) => {
   console.log("Login view called");
-  response.body = await renderFile("../views/login.eta");
+
+  if (loggedIn === "false") {
+    response.body = await renderFile("../views/login.eta");
+  } else {
+    response.body = await renderFile("../views/yhteenveto.eta");
+  }
 };
 
 const showFeatures = async ({ response }) => {
@@ -43,6 +50,7 @@ const loginCheck = async ({ request, response }) => {
   if (pwd === daypasswd) {
     console.log("correct the mondo");
     response.redirect("/features");
+    sessionStorage.setItem("loggedin", true);
   } else {
     console.log("not so correct");
   }

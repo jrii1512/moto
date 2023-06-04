@@ -6,7 +6,7 @@
 </style>
 </head>
 
-<form action="/" method="get">
+<form action="/features" method="get">
   <input type="submit" value="takaisin" id="back">
 </form>
 

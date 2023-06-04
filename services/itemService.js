@@ -34,14 +34,14 @@ const huoltoKantaan = async (
     console.log('huoltopvm:', huoltopvm);
     console.log('service huomiot:', huomiot);
 
+    /*
     const huoltoid = await tarkistaHuoltoId();
     let huolto_id = parseInt(huoltoid) + 1;
     console.log(huolto_id);
-
+    */
     await client.connect();
     await client.queryArray(
-        'INSERT INTO huoltorekisteri (huolto_id, valine, huolto, tehty, huomio) VALUES($1, $2, $3, $4, $5)',
-        huolto_id,
+        'INSERT INTO huoltorekisteri (valine, huolto, tehty, huomio) VALUES($1, $2, $3, $4)',
         tyyppi,
         huolto,
         huoltopvm,

@@ -836,3 +836,11 @@ Fri Jul 15 2022 11:03:33 GMT+0300 (Eastern European Summer Time): itemController
 
 Fri Dec 23 2022 18:45:25 GMT+0200 (Itä-Euroopan normaaliaika): itemController, huolto lisätään seuraavilla parametreillä: null, null, null, null, null, null
 
+Sun Jun 04 2023 12:45:50 GMT+0300 (Itä-Euroopan kesäaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2023-06-04
+
+Sun Jun 04 2023 12:45:50 GMT+0300 (Itä-Euroopan kesäaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 0, Tuusula, test, 2023-06-04
+
+Sun Jun 04 2023 12:45:51 GMT+0300 (Itä-Euroopan kesäaika)_error: PostgresError: invalid input syntax for type integer: "NaN"
+
+Sun Jun 04 2023 12:56:32 GMT+0300 (Itä-Euroopan kesäaika): itemController, huolto lisätään seuraavilla parametreillä: Ford Transit, Pikahuolto, 10, Tuusula, TEST, 2023-06-04
+
