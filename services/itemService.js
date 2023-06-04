@@ -72,7 +72,11 @@ const huolot = async () => {
     );
     await client.end();
 
-    
+    if (res.rows.length === 0){
+        console.log("No records")
+        return "no records"
+    }
+
     res.rows.forEach((e) => {
         console.log('Huolot -> ' + e[5]);
         e[5] = new Date(e[5]).toLocaleDateString('fi-FI');
